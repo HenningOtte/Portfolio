@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     max-width: 1440px;
-    padding: 24px 60px 24px 60px;
+    padding: 24px 80px 24px 80px;
     z-index: 100;
 }
 
@@ -54,7 +54,8 @@
         border-radius: 10px;
         cursor: pointer;
         &:hover {
-            background-color: $neon-green;
+            background-color: $bright-purple;
+            border: 2px solid $bright-purple;
         }
     }
 }
