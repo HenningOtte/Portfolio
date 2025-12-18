@@ -2,15 +2,11 @@
     <div class="hero-curve">
         <div class="sm-links">
             <div class="line"></div>
+            @for (item of icons; track $index) {
             <button class="hero-sm-btn">
-                <img src="/images/icons/git_icon.svg" alt="git icon">
+                <img src="/images/icons/{{item}}" alt="git icon">
             </button>
-            <button class="hero-sm-btn">
-                <img src="/images/icons/in_icon.svg" alt="linkedin">
-            </button>
-            <button class="hero-sm-btn">
-                <img src="/images/icons/email_icon.svg" alt="email">
-            </button>
+            }
             <span>HenningOtte91@gmail.com</span>
         </div>
         <div class="scroll-down">

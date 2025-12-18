@@ -1,0 +1,32 @@
+@use 'variables' as *;
+
+.btn-primary {
+  width: fit-content;
+  font-size: 18px;
+  padding: 12px 24px;
+  background-color: $neon-green;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgb(0, 0, 0, 0.3));
+
+  &:hover {
+    transform: scale(1.15);
+    letter-spacing: 0.5px;
+    background-color: $bright-purple;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+
+    > span {
+      font-size: 16px;
+    }
+  }
+}
+
+.transform-top-center {
+  transform-origin: top center;
+}
+
+.transform-top-right {
+  transform-origin: top right;
+}
