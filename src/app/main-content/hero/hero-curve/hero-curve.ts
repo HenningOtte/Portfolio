@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './hero-curve.scss',
 })
 export class HeroCurve {
-
+  icons = ['git_icon.svg', 'linkedin_icon.svg', 'email_icon.svg'];
 }

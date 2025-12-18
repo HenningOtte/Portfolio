@@ -1,0 +1,38 @@
+<section class="my-skills">
+    <div class="skills-tree">
+        @for (item of icons; track $index) {
+        @if (item.name == 'Continually learning') {
+        <div class="skills-item continually-icon" (mouseover)="toggleImg(true)" (mouseout)="toggleImg(false)">
+            <img [src]="hover == false ? '/images/icons/continually_icon.svg' : '/images/icons/continually_white_icon.svg'"
+                alt="">
+            <span>{{item.name}}</span>
+        </div>
+        } @else {
+        <div class="skills-item icon-jumping">
+            <img src="/images/icons/{{item.path}}" alt="">
+            <span [innerHTML]="item.name"></span>
+        </div>
+        }
+        }
+    </div>
+
+    <div class="skills-content">
+        <div class="skills-header">
+            <h2 class="title">My skills</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="skills-description">
+            <p class="text">
+                Show that you have used a variety of front-end technologies in your projects.
+            </p>
+            <h3 class="subtitle">Looking for <span class="highlight">another skill</span>?</h3>
+            <p class="text">
+                Reveal enthusiasm for learning new technologies and frameworks.
+            </p>
+            <button class="btn-primary transform-top-right">
+                <span>Get in touch</span>
+            </button>
+        </div>
+    </div>
+</section>
