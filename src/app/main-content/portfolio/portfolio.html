@@ -1,13 +1,21 @@
 <section class="portfolio">
     <div class="header">
-        <div class="headline">
-            <div class="devider"></div>
-            <h2 class="headline">Portfolio</h2>
-            <div class="devider"></div>
+        <div class="header-container-left">
+            <div class="small-devider bg-bright-purple"></div>
         </div>
-        <p class="subline">Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+        <div class="header-container-right">
+            <div class="headline">
+                <h2>Portfolio</h2>
+                <div class="devider bg-bright-purple"></div>
+            </div>
+            <p class="subline">
+                Explore a selection of my work here - Interact with projects to see my skills in action.
+            </p>
+        </div>
     </div>
     <div class="projects">
+        @for (item of projects; track $index) {
         <app-project-card></app-project-card>
+        }
     </div>
 </section>

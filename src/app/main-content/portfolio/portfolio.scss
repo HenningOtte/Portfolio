@@ -1,0 +1,54 @@
+@use '../../styles/variables' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+}
+
+.header-container-left {
+  width: 33.3%;
+  display: flex;
+  justify-content: end;
+
+}
+
+.header-container-right {
+  width: 66.7%;
+}
+
+.headline {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  white-space: nowrap;
+  margin: 0 32px;
+}
+
+.devider {
+  height: 3px;
+  flex-grow: 1;
+}
+
+.small-devider {
+  height: 3px;
+  width: 80px;
+  margin-bottom: 24px;
+}
+
+.subline {
+  margin-left: 32px;
+}
+
+.bg-bright-purple {
+  background-color: $bright-purple;
+}
+
+.flex-right {
+  display: flex;
+  justify-content: end;
+}
