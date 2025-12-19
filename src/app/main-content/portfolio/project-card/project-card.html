@@ -1,17 +1,21 @@
-<section class="project-card">
+<section class="project-card" [style]="{'flex-direction' : direction}">
     <div class="mockup">
-        <img src="/images/mockups/join_laptop_mockup.png" alt="">
+        <img src="/images/mockups/{{card.img}}" alt="">
     </div>
-    <div class="project-info">
-        <h3>Join</h3>
-        <p class="tech-stack">JavaScript | HTML | CSS | Firebase</p>
-        <span class="description">
-            Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign
-            users and categories.
-        </span>
-        <div class="project-btns">
-            <button class="btn-action">Live test</button>
-            <button class="btn-link">Git Hub</button>
-        </div>
+    <div class="project-info"
+        [style]="direction == 'row-reverse' ? {'align-items': 'end'} : {'align-items': 'baseline'}">
+        <h3>{{card.name}}</h3>
+        <p class="tech-stack">
+            @for (item of card.techstack; track $index) {
+            {{item}}
+            @if ($index < card.techstack.length - 1) { | } } </p>
+                <span class="description"
+                    [style]="direction == 'row-reverse' ? {'text-align': 'right'} : {'text-align': 'left'}">
+                    {{card.description}}
+                </span>
+                <div class="project-btns">
+                    <button class="btn-action">Live test</button>
+                    <button class="btn-link">Git Hub</button>
+                </div>
     </div>
 </section>

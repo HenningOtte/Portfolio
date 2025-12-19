@@ -2,46 +2,48 @@
 @use '../../../styles/buttons' as *;
 
 h3 {
-    color: $bright-purple;
+  color: $bright-purple;
 }
 
 .project-card {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
 }
 
 .mockup {
-    display: flex;
-    align-items: flex-start;
-    >img {
-        height: 320px;
-        width: 320px;
-        position: relative;
-        top: -60px;
-    }
+  display: flex;
+  align-items: flex-start;
+  > img {
+    height: 320px;
+    width: 320px;
+    position: relative;
+    top: -60px;
+  }
 }
 
 .project-info {
-    width: 480px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 12px;
 }
 
 .tech-stack {
-    color: $neon-green;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 300;
+  color: $neon-green;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .description {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .project-btns {
-    margin-top: 16px;
-    display: flex;
-    gap: 56px;
+  margin-top: 16px;
+  display: flex;
+  gap: 56px;
 }
