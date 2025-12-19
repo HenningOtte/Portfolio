@@ -23,6 +23,32 @@
   }
 }
 
+.btn-action {
+  color: white;
+  background-color: $bright-purple;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: $neon-green;
+  }
+}
+
+.btn-link {
+  color: white;
+  background-color: transparent;
+  padding: 10px 22px;
+  font-size: 16px;
+  border: 2px solid $neon-green;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: $neon-green;
+  }
+}
+
 .transform-top-center {
   transform-origin: top center;
 }
