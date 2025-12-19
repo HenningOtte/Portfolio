@@ -1,9 +1,14 @@
 @use '../../styles/variables' as *;
 
+.portfolio {
+  margin-bottom: 80px;
+}
+
 .header {
   display: flex;
   align-items: center;
   max-width: 1440px;
+  margin-bottom: 80px;
 }
 
 .header-container-left {
@@ -51,4 +56,8 @@ h2 {
 .flex-right {
   display: flex;
   justify-content: end;
+}
+
+.projects {
+  margin: 0 80px;
 }

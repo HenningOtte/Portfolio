@@ -14,8 +14,8 @@
         </div>
     </div>
     <div class="projects">
-        @for (item of projects; track $index) {
-        <app-project-card></app-project-card>
+        @for (item of projects; track $index; let odd = $odd) {
+        <app-project-card [direction]="flexDirection(odd)" [card]="item"></app-project-card>
         }
     </div>
 </section>
