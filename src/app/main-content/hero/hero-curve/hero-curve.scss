@@ -2,12 +2,13 @@
 
 .hero {
     position: absolute;
-    bottom: -300px;
+    bottom: -230px;
     height: 100%;
     left: 0;
     right: 0;
     background-image: url('/images/hero_bg.svg');
     pointer-events: none;
+    background-repeat: no-repeat;
 
     display: flex;
     align-items: flex-end;
