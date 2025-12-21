@@ -1,0 +1,119 @@
+@use '../../styles/variables' as *;
+
+section {
+  width: 100%;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  font-size: 16px;
+  margin-bottom: 80px;
+}
+
+.testimonial {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+}
+
+.content {
+  width: 60%;
+  border-radius: 16px;
+  border: 3px solid $neon-green;
+  padding: 40px 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote {
+  flex-grow: 1;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  > span {
+    margin-left: 16px;
+  }
+}
+
+.profile {
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid $bright-purple;
+  background-image: url('/images/profiles/michael_profil_img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.divider {
+  height: 3px;
+  flex-grow: 1;
+  background-color: $bright-purple;
+}
+
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-left {
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    border: 2px solid $neon-green !important;
+  }
+}
+
+.arrow-right {
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  transform: rotate(180deg);
+  cursor: pointer;
+  &:hover {
+    border: 2px solid $neon-green !important;
+  }
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 24px;
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color: $bright-purple;
+  border-radius: 50%;
+}
+
+.active {
+    background-color: $neon-green;
+}
