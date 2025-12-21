@@ -11,9 +11,18 @@ section {
 }
 
 .testimonial {
+  position: relative;
   width: 100%;
   display: flex;
   gap: 40px;
+  padding-left: 48px;
+}
+
+.double-quotes {
+  position: absolute;
+  width: 72px;
+  top: -24px;
+  left: -4px;
 }
 
 .content {
@@ -101,10 +110,10 @@ section {
 }
 
 .dots {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 24px;
 }
 
 .dot {
@@ -115,5 +124,5 @@ section {
 }
 
 .active {
-    background-color: $neon-green;
+  background-color: $neon-green;
 }
