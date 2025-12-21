@@ -59,8 +59,9 @@ section {
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid $bright-purple;
-  background-image: url('/images/profiles/michael_profil_img.png');
+  // background-image: url('/images/profiles/michael_profil_img.png');
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -124,5 +125,5 @@ section {
 }
 
 .active {
-  background-color: $neon-green;
+  background-color: $neon-green !important;
 }
