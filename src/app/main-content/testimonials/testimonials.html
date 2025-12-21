@@ -3,33 +3,32 @@
         <img class="double-quotes" src="/images/icons/double_quotes.svg" alt="">
         <div class="content">
             <div class="quote">
-                <span>
-                    Michael really kept the team together with his great organization and clear communication.
-                    We wouldn't have got this far without his commitment.
-                </span>
+                <span>{{testimonials[currentIndex].quote}}</span>
             </div>
             <div class="author">
                 <div class="divider"></div>
-                <span>V. Schuster - Team Partner</span>
+                <span>{{testimonials[currentIndex].name}}</span>
             </div>
         </div>
         <div class="profile">
-            <div class="avatar"></div>
+            <div class="avatar"
+                [ngStyle]="{'background-image' : 'url(/images/profiles/'+ testimonials[currentIndex].img + ')'}">
+            </div>
             <div class="divider"></div>
         </div>
     </div>
 
     <div class="carousel">
-        <button class="arrow-left" aria-label="Previous">
+        <button class="arrow-left" aria-label="Previous" (click)="prev()">
             <img src="/images/icons/arrow_left.svg" alt="">
         </button>
         <div class="dots">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+            <div class="dot" [ngClass]="currentIndex == 0 ? 'active' : '' "></div>
+            <div class="dot" [ngClass]="currentIndex == 1 ? 'active' : '' "></div>
+            <div class="dot" [ngClass]="currentIndex == 2 ? 'active' : '' "></div>
         </div>
         <button class="arrow-right" aria-label="Next">
-            <img src="/images/icons/arrow_left.svg" alt="">
+            <img src="/images/icons/arrow_left.svg" alt="" (click)="next()">
         </button>
     </div>
 </section>
