@@ -1,0 +1,29 @@
+@use '../../styles/variables' as *;
+
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.headline {
+  flex: 2;
+//   margin-left: 40px;
+}
+
+.divider {
+  height: 3px;
+  flex: 1;
+  background-color: $bright-purple;
+  margin-right: 40px;
+}
+
+.contact-form-container {
+    display: flex;
+}
