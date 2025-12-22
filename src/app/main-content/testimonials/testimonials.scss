@@ -16,6 +16,8 @@ section {
   display: flex;
   gap: 40px;
   padding-left: 48px;
+  animation-name: transition;
+  animation-duration: 0.25s;
 }
 
 .double-quotes {
@@ -59,7 +61,6 @@ section {
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid $bright-purple;
-  // background-image: url('/images/profiles/michael_profil_img.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,10 +87,14 @@ section {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  background-image: url('/images/icons/arrow_left.svg');
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
   border: none;
   cursor: pointer;
   &:hover {
-    border: 2px solid $neon-green !important;
+    outline: 2px solid $neon-green !important;
   }
 }
 
@@ -102,11 +107,15 @@ section {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  background-image: url('/images/icons/arrow_left.svg');
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
   border: none;
   transform: rotate(180deg);
   cursor: pointer;
   &:hover {
-    border: 2px solid $neon-green !important;
+    outline: 2px solid $neon-green !important;
   }
 }
 
@@ -126,4 +135,13 @@ section {
 
 .active {
   background-color: $neon-green !important;
+}
+
+@keyframes transition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

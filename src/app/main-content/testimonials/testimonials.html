@@ -1,34 +1,32 @@
 <section>
-    <div class="testimonial">
-        <img class="double-quotes" src="/images/icons/double_quotes.svg" alt="">
+    @for (item of testimonials; track $index) {
+    <div *ngIf="$index == currentIndex" class="testimonial">
+        <img class="double-quotes" src="/images/icons/double_quotes.svg" alt="author-img">
         <div class="content">
             <div class="quote">
-                <span>{{testimonials[currentIndex].quote}}</span>
+                <span>{{testimonials[$index].quote}}</span>
             </div>
             <div class="author">
                 <div class="divider"></div>
-                <span>{{testimonials[currentIndex].name}}</span>
+                <span>{{testimonials[$index].name}}</span>
             </div>
         </div>
         <div class="profile">
             <div class="avatar"
-                [ngStyle]="{'background-image' : 'url(/images/profiles/'+ testimonials[currentIndex].img + ')'}">
+                [ngStyle]="{'background-image' : 'url(/images/profiles/'+ testimonials[$index].img + ')'}">
             </div>
             <div class="divider"></div>
         </div>
     </div>
+    }
 
     <div class="carousel">
-        <button class="arrow-left" aria-label="Previous" (click)="prev()">
-            <img src="/images/icons/arrow_left.svg" alt="">
-        </button>
+        <button class="arrow-left" aria-label="Previous" (click)="prev()"></button>
         <div class="dots">
             <div class="dot" [ngClass]="currentIndex == 0 ? 'active' : '' "></div>
             <div class="dot" [ngClass]="currentIndex == 1 ? 'active' : '' "></div>
             <div class="dot" [ngClass]="currentIndex == 2 ? 'active' : '' "></div>
         </div>
-        <button class="arrow-right" aria-label="Next">
-            <img src="/images/icons/arrow_left.svg" alt="" (click)="next()">
-        </button>
+        <button class="arrow-right" aria-label="Next" (click)="next()"></button>
     </div>
 </section>
