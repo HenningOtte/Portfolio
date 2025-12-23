@@ -1,61 +1,60 @@
 @use '../styles/variables' as *;
 
 .navbar {
-    position: fixed;
-    width: 100vw;
-    height: 96px;
-    background-color: $bg-darkblue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1440px;
-    padding: 24px 80px 24px 80px;
-    z-index: 100;
+  position: fixed;
+  width: 100vw;
+  height: 96px;
+  background-color: $bg-darkblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  padding: 24px 80px 24px 80px;
+  z-index: 100;
 }
 
 .navbar_logo {
-    font-weight: 700;
-    font-size: 32px;
+    height: 40px;
 }
 
 .navbar_actions {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 18px;
-    font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .navbar_links {
-    margin-right: 80px;
-    display: flex;
-    gap: 24px;
+  margin-right: 80px;
+  display: flex;
+  gap: 24px;
 
-    >a {
-        cursor: pointer;
-        &:hover {
-            color: $neon-green;
-        }
+  > a {
+    cursor: pointer;
+    &:hover {
+      color: $neon-green;
     }
+  }
 }
 
 .navbar_languages {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 
-    >button {
-        font-size: 16px;
-        color: white;
-        width: 40px;
-        height: 32px;
-        background-color: transparent;
-        border: none;
-        border: 2px solid $neon-green;
-        border-radius: 10px;
-        cursor: pointer;
-        &:hover {
-            background-color: $bright-purple;
-            border: 2px solid $bright-purple;
-        }
+  > button {
+    font-size: 16px;
+    color: white;
+    width: 40px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    border: 2px solid $neon-green;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: $bright-purple;
+      border: 2px solid $bright-purple;
     }
+  }
 }
