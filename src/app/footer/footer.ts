@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './footer.scss',
 })
 export class Footer {
-
+  icons = ['git_icon.svg', 'linkedin_icon.svg', 'email_icon.svg'];
 }

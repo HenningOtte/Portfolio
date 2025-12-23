@@ -1,1 +1,16 @@
-<footer></footer>
+<footer>
+    <div class="logo-sm-container">
+        <img class="logo" src="/images/icons/Henning_Logo.svg" alt="">
+        <span>© Henning Otte 2026</span>
+        <div class="btns-sm">
+            @for (item of icons; track $index) {
+            <button class="hero-sm-btn">
+                <img src="/images/icons/{{item}}" alt="git icon">
+            </button>
+            }
+        </div>
+    </div>
+    <div class="legal-notice">
+        <a>Legal Notice</a>
+    </div>
+</footer>
