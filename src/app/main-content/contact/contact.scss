@@ -5,6 +5,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
+  margin-bottom: 80px;
 }
 
 .contact-title {
@@ -15,7 +17,6 @@
 
 .headline {
   flex: 2;
-  //   margin-left: 40px;
 }
 
 .divider {
@@ -50,11 +51,11 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
 .input-container {
   width: 100%;
+  margin-bottom: 16px;
   background-color: transparent;
   border: 1px solid $bright-purple;
   border-radius: 6px;
@@ -97,8 +98,37 @@ form {
       text-decoration: underline;
     }
   }
-  > input {
-    cursor: pointer;
+  > input[type='checkbox'] {
+    appearance: none;
+    width: 22px;
+    height: 22px;
     background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url('/images/icons/checkbox_empty.svg');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    &:hover {
+      background-color: $purple;
+    }
+    &:checked {
+      background-image: url('/images/icons/checkbox_checked.svg');
+    }
   }
+}
+
+.privacy {
+  height: 52px;
+  width: auto;
+  margin-bottom: 32px;
+  > p {
+    margin-top: 4px;
+  }
+}
+
+.privacy-warning {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 24px;
 }

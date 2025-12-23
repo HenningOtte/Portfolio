@@ -21,6 +21,10 @@
       font-size: 16px;
     }
   }
+
+  &:disabled {
+    background-color: grey;
+  }
 }
 
 .btn-action {
@@ -55,4 +59,45 @@
 
 .transform-top-right {
   transform-origin: top right;
+}
+
+.arrow-up {
+  width: 100%;
+  height: auto;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  > button {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url('/images/icons/arrow_up.svg');
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    &:hover {
+      background-image: url('/images/icons/arrow_up_green.svg');
+      border: 2px solid $neon-green;
+    }
+  }
+}
+
+.hero-sm-btn {
+  background-color: transparent;
+  border: none;
+  pointer-events: all;
+  transition: all 0.2s ease;
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  > img {
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+  }
 }
