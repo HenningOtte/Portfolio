@@ -18,27 +18,34 @@
             <form action="action_page.php">
                 <div>
                     <!-- <label for="name">First Name</label> -->
-                    <input class="input-container" type="text" id="name" name="firstname" placeholder="Your name..">
+                    <input class="input-container" [(ngModel)]="name" type="text" id="name" name="name"
+                        placeholder="Your name..">
                     <span></span>
                 </div>
                 <div>
                     <!-- <label for="email">Last Name</label> -->
-                    <input class="input-container" type="email" id="email" name="lastname" placeholder="Your email..">
+                    <input class="input-container" [(ngModel)]="email" type="email" id="email" name="lastname"
+                        placeholder="Your email..">
                     <span></span>
                 </div>
                 <!-- <label for="subject">Subject</label> -->
-                <textarea class="input-container" id="subject" name="subject" placeholder="Write something.."
-                    style="height:200px"></textarea>
-                <label class="privacy-container">
-                    <input type="checkbox">I've read the <a href="">privacy policy</a> and agree to the processing of my
-                    data as outlined.
-                </label>
+                <textarea [(ngModel)]="message" class="input-container" id="subject" name="subject"
+                    placeholder="Write something.." style="height:200px"></textarea>
+                <div class="privacy">
+                    <label class="privacy-container">
+                        <input (click)="privacyChecked()" type="checkbox">I've read the <a href="">privacy policy</a>
+                        and agree to the processing of my
+                        data as outlined.
+                    </label>
+                    <p *ngIf="!privacyPolicy" class="privacy-warning">Please accept the privacy police</p>
+                </div>
                 <div class="submit-container">
-                    <button class="btn-primary transform-top-center" type="submit">
+                    <button disabled id="submit-btn" class="btn-primary transform-top-center" type="submit">
                         <span>Send a message :)</span>
                     </button>
                 </div>
             </form>
         </div>
     </div>
+    <div class="arrow-up"><button></button></div>
 </section>
