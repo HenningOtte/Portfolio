@@ -5,6 +5,7 @@
     position: absolute;
     bottom: -230px;
     height: 100%;
+    max-width: 1440px;
     left: 0;
     right: 0;
     background-image: url('/images/hero_bg.svg');
@@ -12,6 +13,7 @@
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
+    z-index: 3;
 }
 
 .hero-curve {
