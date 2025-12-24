@@ -4,41 +4,64 @@
 .hero {
   width: 100%;
   height: 100vh;
+  max-width: 1440px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   margin-bottom: 240px;
+  padding: 0 80px;
 }
 
 .hero-img {
-  height: 100%;
-  width: auto;
+  left: 40px;
+  height: 100vh;
+  width: 500px;
+  position: absolute;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
 .profil-pic {
-  height: 80%;
-  width: auto;
-  object-fit: cover;
+  width: 100%;
+  z-index: 1;
 }
 
-.shadow-container {
-  height: 600px;
-  width: auto;
+.hero-shadow {
   position: absolute;
-  overflow: hidden;
-  z-index: -1;
-  left: 0;
-  > img {
-    height: 100%;
-    width: auto;
-    object-fit: cover;
-    position: relative;
-    bottom: -120px;
-  }
+  width: 500px;
 }
+
+// .hero-img {
+//   height: 100vh;
+//   width: auto;
+//   display: flex;
+//   align-items: flex-end;
+// }
+
+// .profil-pic {
+//   height: auto;
+//   width: 520px;
+//   object-fit: cover;
+// }
+
+// .shadow-container {
+//   height: 600px;
+//   width: auto;
+//   position: absolute;
+//   overflow: hidden;
+//   z-index: -1;
+//   left: 0;
+//   > img {
+//     height: 100%;
+//     width: auto;
+//     object-fit: cover;
+//     position: relative;
+//     bottom: -120px;
+//   }
+// }
 
 .hero_greetings {
+  z-index: 2;
   height: 100%;
   display: flex;
   gap: 16px;

@@ -16,8 +16,12 @@ export class Contact {
 
   constructor() {}
 
-  privacyChecked() {
+  privacyChecked(event: Event) {
+    const target = event.target as HTMLInputElement;
+    console.log(target.checked);
+
     const checkbox: any = document.querySelector('.privacy-container')?.children[0];
     this.privacyPolicy = checkbox.checked;
+    // event.preventDefault();
   }
 }
