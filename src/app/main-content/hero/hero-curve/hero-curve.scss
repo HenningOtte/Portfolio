@@ -3,17 +3,18 @@
 
 .hero {
     position: absolute;
-    bottom: -230px;
+    bottom: -45%;
     height: 100%;
     max-width: 1440px;
     left: 0;
     right: 0;
     background-image: url('/images/hero_bg.svg');
-    pointer-events: none;
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: flex-end;
     z-index: 3;
+    pointer-events: none;
 }
 
 .hero-curve {
@@ -21,7 +22,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 18%;
+    @media (max-width: 1200px) {
+        margin-bottom: 12%;
+    }
 }
 
 .scroll-down {
