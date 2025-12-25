@@ -88,7 +88,7 @@ form {
 .privacy-container {
   font-size: 12px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
   > a {
     cursor: pointer;
@@ -100,8 +100,8 @@ form {
   }
   > input[type='checkbox'] {
     appearance: none;
-    width: 22px;
-    height: 22px;
+    min-width: 22px;
+    min-height: 22px;
     background-color: transparent;
     border-radius: 50%;
     cursor: pointer;
@@ -116,6 +116,14 @@ form {
       background-image: url('/images/icons/checkbox_checked.svg');
     }
   }
+  @media (max-width: 1200px) {
+    align-items: baseline;
+  }
+}
+
+.privacy-span {
+  position: relative;
+  bottom: 6px;
 }
 
 .privacy {
