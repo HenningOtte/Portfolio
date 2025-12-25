@@ -3,8 +3,10 @@
 
 .hero {
     position: absolute;
+    overflow: hidden;
     bottom: -45%;
     height: 100%;
+    width: 100%;
     max-width: 1440px;
     left: 0;
     right: 0;
@@ -22,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 18%;
+    margin-bottom: 12%;
     @media (max-width: 1200px) {
         margin-bottom: 12%;
     }
