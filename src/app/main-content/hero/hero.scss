@@ -9,8 +9,10 @@
   justify-content: flex-end;
   margin-bottom: 260px;
   background-color: $bg-darkblue;
-  @media (max-width: 880px) {
+  @media (max-width: 1080px) {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -20,6 +22,10 @@
   position: absolute;
   width: 100%;
   pointer-events: none;
+
+  @media (max-width: 1080px) {
+    top: 54%;
+  }
 }
 
 .hero-img {
@@ -42,11 +48,36 @@
     top: 28%;
     width: 45%;
   }
+
+  @media (max-width: 1080px) {
+    position: absolute;
+    max-width: none;
+    width: 100%;
+    min-height: 100vh;
+    inset: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .profil-pic {
   width: 100%;
   z-index: 1;
+  @media (max-width: 1080px) {
+    width: 80%;
+    padding-bottom: 140px;
+  }
+}
+
+.profil-arm {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+
+  @media (max-width: 1080px) {
+    width: 80%;
+    padding-bottom: 140px;
+  }
 }
 
 .hero-shadow {
@@ -63,9 +94,18 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   position: relative;
   top: -8%;
+
+  @media (max-width: 1080px) {
+    z-index: 3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    top: 0;
+    padding: 0;
+    padding-bottom: 56px;
+  }
 }
 
 .hero_text {
@@ -77,10 +117,6 @@
   -webkit-transform: rotate(-180deg);
   font-size: 58px;
   margin-bottom: 8px;
-
-  @media (max-width: 992px) {
-    font-size: 44px;
-  }
 }
 
 .hero-titel {
@@ -90,20 +126,12 @@
 
   h1 {
     font-size: 80px;
-
-    @media (max-width: 992px) {
-      font-size: 60px;
-    }
   }
 
   span {
     font-size: 50px;
     text-transform: uppercase;
     color: #9747ff;
-
-    @media (max-width: 992px) {
-      font-size: 38px;
-    }
   }
 }
 
@@ -131,7 +159,7 @@
 }
 
 .devider {
-  width: 80px;
+  width: 48px;
   height: 3px;
   background-color: $bright-purple;
 }
@@ -140,8 +168,8 @@
   display: flex;
   align-items: center;
   gap: 32px;
-  
-  >span {
+
+  > span {
     font-size: 24px;
   }
 }

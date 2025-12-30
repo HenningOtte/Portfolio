@@ -13,7 +13,7 @@
             </p>
         </div>
     </div>
-    <div class="projects">
+    <div class="projects site-padding">
         @for (item of projects; track $index; let odd = $odd) {
         <app-project-card [direction]="flexDirection(odd)" [card]="item"></app-project-card>
         }
