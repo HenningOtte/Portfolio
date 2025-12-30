@@ -1,9 +1,9 @@
-<div class="hero site-padding">
+<div class="hero max-width">
     <div class="hero-img">
         <img class="profil-pic" src="/images/hero_profile_henning_pic.png" alt="profil-picture">
         <img class="hero-shadow" src="/images/photo_shadows.svg" alt="background-img">
     </div>
-    <div class="hero-greetings">
+    <div class="hero-greetings dNone-max-880">
         <div class="hero_text">
             <p class="hero_iam">I am</p>
             <div class="hero-titel">
@@ -17,5 +17,25 @@
             </button>
         </div>
     </div>
-    <app-hero-curve></app-hero-curve>
+
+
+    <img class="hero-curve max-width" src="/images/hero_bg.svg" alt="">
+</div>
+
+<div class="hero-footer max-width">
+    <div class="social-links">
+        <div class="devider"></div>
+        <div class="social-icons">
+            @for (item of icons; track $index) {
+            <button class="hero-sm-btn">
+                <img src="/images/icons/{{item}}" alt="git icon">
+            </button>
+            }
+        </div>
+        <span>HenningOtte91@gmail.com</span>
+    </div>
+    <div class="scroll-down">
+        <p>Scroll Down</p>
+        <img src="/images/icons/arrow_up.svg" alt="arrow down">
+    </div>
 </div>

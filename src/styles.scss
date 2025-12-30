@@ -50,10 +50,19 @@
 body {
   background-color: $bg-darkblue;
   color: white;
+  @media (min-width: 1440px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 h2 {
   font-size: 80px;
+  @media (max-width: 992px) {
+    font-size: 60px;
+  }
 }
 
 h3 {
@@ -66,4 +75,20 @@ h3 {
   @media (max-width: 992px) {
     padding: 0 40px;
   }
+}
+
+.dNone-max-880 {
+  @media (max-width: 880px) {
+    display: none !important;
+  }
+}
+
+.dNone-min-880 {
+  @media (min-width: 880px) {
+    display: none !important;
+  }
+}
+
+.max-width {
+  max-width: 1680px;
 }

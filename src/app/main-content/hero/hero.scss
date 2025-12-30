@@ -2,26 +2,45 @@
 @use '../../styles/buttons' as *;
 
 .hero {
+  position: relative;
   width: 100%;
-  max-width: 1440px;
   height: 100vh;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 260px;
+  background-color: $bg-darkblue;
+  @media (max-width: 880px) {
+    flex-direction: column;
+  }
+}
+
+.hero-curve {
+  z-index: 2;
+  top: 43%;
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
 }
 
 .hero-img {
   left: 40px;
-  height: 100vh;
-  width: 520px;
+  height: auto;
+  max-width: 740px;
+  width: 50%;
   position: absolute;
-  bottom: -40px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  @media (max-width: 1200px) {
-    width: 400px;
-    bottom: -32px;
+  top: 20%;
+  pointer-events: none;
+
+  @media (max-width: 1280px) {
+    width: 42%;
+  }
+
+  @media (max-width: 1280px) and (orientation: portrait) {
+    top: 28%;
+    width: 45%;
   }
 }
 
@@ -32,13 +51,11 @@
 
 .hero-shadow {
   position: absolute;
-  width: 600px;
-  @media (max-width: 1200px) {
-    width: 500px;
-  }
+  width: 100%;
 }
 
 .hero-greetings {
+  padding-right: 80px;
   z-index: 2;
   height: 100%;
   display: flex;
@@ -47,10 +64,8 @@
   align-items: center;
   flex-direction: column;
 
-  @media (max-width: 1200px) {
-    position: relative;
-    bottom: 32px;
-  }
+  position: relative;
+  top: -8%;
 }
 
 .hero_text {
@@ -63,8 +78,8 @@
   font-size: 58px;
   margin-bottom: 8px;
 
-  @media (max-width: 1200px) {
-    font-size: 48px;
+  @media (max-width: 992px) {
+    font-size: 44px;
   }
 }
 
@@ -75,8 +90,9 @@
 
   h1 {
     font-size: 80px;
-    @media (max-width: 1200px) {
-      font-size: 66px;
+
+    @media (max-width: 992px) {
+      font-size: 60px;
     }
   }
 
@@ -84,8 +100,9 @@
     font-size: 50px;
     text-transform: uppercase;
     color: #9747ff;
-    @media (max-width: 1200px) {
-      font-size: 42px;
+
+    @media (max-width: 992px) {
+      font-size: 38px;
     }
   }
 }
@@ -102,4 +119,56 @@
   background-image: url('/images/hero_bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.hero-footer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  bottom: 200px;
+}
+
+.devider {
+  width: 80px;
+  height: 3px;
+  background-color: $bright-purple;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  
+  >span {
+    font-size: 24px;
+  }
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.scroll-down {
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+
+  > p {
+    font-size: 24px;
+    writing-mode: vertical-rl;
+    margin-left: 4px;
+  }
+
+  > img {
+    transform: rotate(180deg);
+    height: 24px;
+    width: auto;
+  }
 }

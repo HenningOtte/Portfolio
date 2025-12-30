@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { HeroCurve } from './hero-curve/hero-curve';
 
 @Component({
   selector: 'app-hero',
-  imports: [HeroCurve],
+  imports: [],
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
 })
 export class Hero {
-
+  icons = ['git_icon.svg', 'linkedin_icon.svg', 'email_icon.svg'];
 }
