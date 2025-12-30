@@ -1,0 +1,19 @@
+<nav class="navbar max-width site-padding">
+    <img class="navbar_logo" src="/images/icons/Henning_Logo.svg" alt="">
+
+    <button class="burger-menu" (click)="toggleMenu()">
+        <div [ngClass]="{'rotate-top' : isMenuOpen}" class="bar"></div>
+        <div [ngClass]="{'rotate-bottom' : isMenuOpen}" class="bar rotate-bottom"></div>
+        <div [ngClass]="{'dNone' : isMenuOpen}" class="bar"></div>
+    </button>
+
+    <div [ngClass]="{'push-in-nav' : isMenuOpen}" class="nav-links">
+        <a href="">About me</a>
+        <a href="">My skills</a>
+        <a href="">Portfolio</a>
+        <a href="">Contact</a>
+        <div class="languages">
+            <button>EN</button>/<button>DE</button>
+        </div>
+    </div>
+</nav>

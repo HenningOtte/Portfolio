@@ -77,14 +77,18 @@ h3 {
   }
 }
 
-.dNone-max-880 {
-  @media (max-width: 880px) {
+.dNone {
+  display: none;
+}
+
+.dNone-max-1080 {
+  @media (max-width: 1080px) {
     display: none !important;
   }
 }
 
-.dNone-min-880 {
-  @media (min-width: 880px) {
+.dNone-min-1081 {
+  @media (min-width: 1081px) {
     display: none !important;
   }
 }
