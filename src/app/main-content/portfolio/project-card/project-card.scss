@@ -10,17 +10,34 @@ h3 {
   display: flex;
   align-items: flex-start;
   gap: 40px;
+
+  @media (max-width: 930px) {
+    flex-direction: column !important;
+    gap: 0;
+    align-items: center;
+  }
 }
 
 .mockup {
   display: flex;
   align-items: flex-start;
+
   > img {
     height: 320px;
     width: 320px;
     position: relative;
     top: -60px;
     pointer-events: none;
+  }
+
+  @media (max-width: 930px) {
+    > img {
+      height: auto;
+      width: 320px;
+      position: inherit;
+      top: 0;
+      pointer-events: none;
+    }
   }
 }
 
@@ -30,6 +47,10 @@ h3 {
   flex-direction: column;
   align-items: baseline;
   gap: 12px;
+
+  @media (max-width: 930px) {
+    align-items: center !important;
+  }
 }
 
 .tech-stack {
@@ -41,6 +62,10 @@ h3 {
 
 .description {
   font-size: 16px;
+
+  @media (max-width: 930px) {
+    text-align: center !important;
+  }
 }
 
 .project-btns {
