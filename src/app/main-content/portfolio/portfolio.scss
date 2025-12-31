@@ -14,7 +14,6 @@
   width: 33.3%;
   display: flex;
   justify-content: end;
-
 }
 
 .header-container-right {
@@ -55,4 +54,10 @@ h2 {
 .flex-right {
   display: flex;
   justify-content: end;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }

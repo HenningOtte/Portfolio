@@ -21,6 +21,20 @@ h2 {
   @media (max-width: 1080px) {
     width: 55%;
   }
+  @media (max-width: 930px) {
+    width: 100%;
+    padding: 0 48px;
+  }
+}
+
+.about-mindset-text {
+  @media (max-width: 930px) {
+    padding-right: 35%;
+  }
+
+  @media (max-width: 768px) {
+    padding-right: 0px;
+  }
 }
 
 .about-description {
@@ -55,6 +69,10 @@ h2 {
   align-items: center;
   @media (max-width: 1080px) {
     width: 40%;
+  }
+
+  @media (max-width: 930px) {
+    display: none;
   }
 
   > img {
