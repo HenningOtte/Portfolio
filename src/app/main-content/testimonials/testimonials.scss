@@ -10,7 +10,7 @@
   margin-bottom: 80px;
 
   @media (max-width: 1080px) {
-    padding-left: 0px;
+    padding-left: 0px !important;
   }
 }
 
@@ -22,6 +22,13 @@
   padding-left: 48px;
   animation-name: transition;
   animation-duration: 0.25s;
+
+  @media (max-width: 930px) {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 0;
+    padding: 0 48px;
+  }
 }
 
 .double-quotes {
@@ -47,6 +54,10 @@
     padding: 24px 40px;
     min-height: 280px;
   }
+
+  @media (max-width: 930px) {
+    width: 100%;
+  }
 }
 
 .quote {
@@ -66,6 +77,12 @@
   height: auto;
   display: flex;
   align-items: center;
+
+  @media (max-width: 930px) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+  }
 }
 
 .avatar {
@@ -77,12 +94,22 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (max-width: 930px) {
+    grid-column: 2;
+    justify-self: center;
+  }
 }
 
 .divider {
   height: 3px;
   flex-grow: 1;
   background-color: $bright-purple;
+
+  @media (max-width: 930px) {
+    grid-column: 3;
+    width: calc(100% + 48px);
+  }
 }
 
 .carousel {
