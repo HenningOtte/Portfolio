@@ -1,40 +1,42 @@
 <div class="hero max-width">
-    <div class="hero-img">
-        <img class="profil-pic" src="/images/hero_profile_henning_pic.png" alt="profil-picture">
-        <img class="profil-arm" src="/images/hero_profile_henning_pic_arm.png" alt="profil-picture-arm">
-        <img class="hero-shadow" src="/images/photo_shadows.svg" alt="background-img">
-    </div>
-    <div class="hero-greetings">
-        <div class="hero_text">
-            <p class="hero_iam">I am</p>
-            <div class="hero-titel">
-                <h1>Henning Otte</h1>
-                <span>Frontend Developer</span>
+    <div class="hero-main">
+        <div class="hero-img">
+            <img class="profil-pic" src="/images/hero_profile_henning_pic.png" alt="profil-picture">
+
+            <!-- <img class="profil-arm" src="/images/hero_profile_henning_pic_arm.png" alt="profil-picture-arm"> -->
+            <!-- <img class="hero-shadow" src="/images/photo_shadows.svg" alt="background-img"> -->
+        </div>
+
+        <div class="hero-greetings">
+            <div class="hero_text">
+                <p class="hero_iam">I am</p>
+                <div class="hero-titel">
+                    <h1>Henning Otte</h1>
+                    <span>Frontend Developer</span>
+                </div>
+            </div>
+            <div>
+                <button class="btn-primary transform-top-center">
+                    <span>Let's talk!</span>
+                </button>
             </div>
         </div>
-        <div>
-            <button class="btn-primary transform-top-center">
-                <span>Let's talk!</span>
-            </button>
+    </div>
+
+    <div class="hero-footer max-width">
+        <div class="social-links">
+            <div class="devider"></div>
+            <div class="social-icons">
+                @for (item of icons; track $index) {
+                <button class="hero-sm-btn">
+                    <img src="/images/icons/{{item}}" alt="git icon">
+                </button>
+                }
+            </div>
+            <span>HenningOtte91@gmail.com</span>
         </div>
     </div>
 
-
-    <img class="hero-curve max-width" src="/images/hero_bg.svg" alt="">
-</div>
-
-<div class="hero-footer max-width">
-    <div class="social-links">
-        <div class="devider"></div>
-        <div class="social-icons">
-            @for (item of icons; track $index) {
-            <button class="hero-sm-btn">
-                <img src="/images/icons/{{item}}" alt="git icon">
-            </button>
-            }
-        </div>
-        <span>HenningOtte91@gmail.com</span>
-    </div>
     <div class="scroll-down">
         <p>Scroll Down</p>
         <img src="/images/icons/arrow_up.svg" alt="arrow down">

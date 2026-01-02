@@ -2,90 +2,35 @@
 @use '../../styles/buttons' as *;
 
 .hero {
-  position: relative;
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 260px;
-  background-color: $bg-darkblue;
-  @media (max-width: 1080px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
 }
 
-.hero-curve {
-  z-index: 2;
-  top: 43%;
-  position: absolute;
-  width: 100%;
-  pointer-events: none;
-
-  @media (max-width: 1080px) {
-    top: 54%;
-  }
+.hero-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
 }
 
 .hero-img {
-  left: 40px;
-  height: auto;
-  max-width: 740px;
-  width: 50%;
-  position: absolute;
+  height: 100%;
+  background-color: green;
   display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  top: 20%;
-  pointer-events: none;
-
-  @media (max-width: 1280px) {
-    width: 42%;
-  }
-
-  @media (max-width: 1280px) and (orientation: portrait) {
-    top: 28%;
-    width: 45%;
-  }
-
-  @media (max-width: 1080px) {
-    position: absolute;
-    max-width: none;
-    width: 100%;
-    min-height: 100vh;
-    inset: 0;
-    flex-direction: column;
-    justify-content: center;
-  }
+  align-items: flex-end;
+  overflow: hidden;
 }
 
 .profil-pic {
   width: 100%;
-  z-index: 1;
-  @media (max-width: 1080px) {
-    width: 80%;
-    padding-bottom: 140px;
-  }
-}
-
-.profil-arm {
-  position: absolute;
-  width: 100%;
-  z-index: 3;
-
-  @media (max-width: 1080px) {
-    width: 80%;
-    padding-bottom: 140px;
-  }
-}
-
-.hero-shadow {
-  position: absolute;
-  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .hero-greetings {
+  min-width: max-content;
   padding-right: 80px;
   z-index: 2;
   height: 100%;
@@ -94,17 +39,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
-  top: -8%;
 
   @media (max-width: 1080px) {
-    z-index: 3;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    top: 0;
-    padding: 0;
-    padding-bottom: 56px;
   }
 }
 
@@ -131,7 +67,7 @@
   span {
     font-size: 50px;
     text-transform: uppercase;
-    color: #9747ff;
+    color: $bright-purple;
   }
 }
 
@@ -150,12 +86,10 @@
 }
 
 .hero-footer {
-  position: relative;
-  z-index: 2;
-  width: 100%;
+  background-color: #9747ff;
   justify-content: space-between;
+  align-items: flex-end;
   display: flex;
-  bottom: 200px;
 }
 
 .devider {
@@ -181,9 +115,12 @@
 }
 
 .scroll-down {
-  margin-right: 80px;
+  position: absolute;
+  right: 80px;
+  bottom: 16px;
   display: flex;
   flex-direction: column;
+  pointer-events: none;
   align-items: center;
   gap: 8px;
   font-size: 18px;
@@ -200,3 +137,26 @@
     width: auto;
   }
 }
+
+// .hero-curve {
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   z-index: 1;
+//   pointer-events: none;
+// }
+
+// .curve-img {
+//   width: 120%;
+//   height: 100%;
+//   object-fit: cover;
+//   object-position: right bottom;
+//   display: block;
+// }
+
+// .profil-pic {
+//   align-self: end;
+//   transform: translateY(-24px);
+//   width: min(45vw, 800px);
+// }
