@@ -21,18 +21,62 @@
 h2 {
   white-space: nowrap;
   padding: 0 32px;
+
+  @media (max-width: 360px) {
+    padding: 0 16px;
+  }
 }
+
+// .devider-left {
+//   display: flex;
+//   justify-self: end;
+//   align-items: center;
+
+//   > div {
+//     height: 4px;
+//     border-radius: 2px;
+//     width: 80px;
+//     background-color: $bright-purple;
+//   }
+
+//   @media (max-width: 600px) {
+//     width: 48px;
+//   }
+
+//   @media (max-width: 360px) {
+//     .devider-left {
+//       width: 100%;
+//       justify-self: stretch;
+//     }
+
+//     .devider-left > div {
+//       width: 100%;
+//     }
+//   }
+// }
 
 .devider-left {
   display: flex;
-  justify-content: flex-end;
+  justify-self: end;
   align-items: center;
 
   > div {
+    width: 80px;
     height: 4px;
     border-radius: 2px;
-    width: 80px;
-    background-color: $bright-purple;
+    background: $bright-purple;
+  }
+
+  @media (max-width: 600px) {
+    width: 48px;
+  }
+
+  @media (max-width: 360px) {
+    width: 100%;
+    justify-self: stretch;
+    > div {
+      width: 100%;
+    }
   }
 }
 
@@ -50,7 +94,21 @@ h2 {
 }
 
 .subline {
-  margin-left: 32px;
+  margin-left: 86px;
+  @media (max-width: 930px) {
+    margin-left: 0;
+    padding: 0 48px;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 32px;
+  }
+
+  @media (max-width: 360px) {
+    padding: 0 24px;
+    font-size: 14px !important;
+  }
 }
 
 .bg-bright-purple {

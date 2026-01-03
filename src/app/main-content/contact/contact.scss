@@ -28,13 +28,15 @@
 
 .contact-form-container {
   width: 100%;
-  padding: 60px 80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
   gap: 60px;
 
   @media (max-width: 930px) {
     flex-direction: column;
-    padding: 24px 48px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -46,6 +48,10 @@
 
   @media (max-width: 930px) {
     width: 100%;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 14px;
   }
 }
 

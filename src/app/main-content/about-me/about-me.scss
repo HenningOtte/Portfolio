@@ -18,12 +18,25 @@ h2 {
 .about-content {
   width: 50%;
   padding-left: 60px;
+
   @media (max-width: 1080px) {
     width: 55%;
   }
+
   @media (max-width: 930px) {
     width: 100%;
     padding: 0 48px;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    padding: 0 32px;
+  }
+
+  @media (max-width: 360px) {
+    width: 100%;
+    padding: 0 24px;
+    font-size: 14px;
   }
 }
 
@@ -34,6 +47,10 @@ h2 {
 
   @media (max-width: 768px) {
     padding-right: 0px;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 14px;
   }
 }
 

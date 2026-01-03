@@ -11,16 +11,32 @@
   padding-top: 24px;
   padding-bottom: 24px;
   z-index: 100;
+
+  @media (max-width: 1024px) and (orientation: landscape) {
+    height: 68px !important;
+  }
+
+  @media (max-width: 680px) {
+    height: 68px !important;
+  }
 }
 
 .navbar_logo {
   height: 40px;
+
+  @media (max-width: 1024px) and (orientation: landscape) {
+    height: 32px;
+  }
+
+  @media (max-width: 680px) {
+    height: 32px;
+  }
 }
 
 .burger-menu {
   position: relative;
   height: 40px;
-  width: 40px;
+  aspect-ratio: 1 / 1;
   padding: 0;
   background-color: transparent;
   display: flex;
@@ -28,6 +44,14 @@
   justify-content: space-between;
   border: none;
   cursor: pointer;
+
+  @media (max-width: 1024px) and (orientation: landscape) {
+    height: 32px;
+  }
+
+  @media (max-width: 680px) {
+    height: 32px;
+  }
 }
 
 .bar {
@@ -73,6 +97,11 @@
     &:hover {
       color: $neon-green;
     }
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape) {
+    margin-top: 68px;
+    gap: 16px;
   }
 }
 
