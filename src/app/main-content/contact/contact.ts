@@ -22,6 +22,5 @@ export class Contact {
 
     const checkbox: any = document.querySelector('.privacy-container')?.children[0];
     this.privacyPolicy = checkbox.checked;
-    // event.preventDefault();
   }
 }

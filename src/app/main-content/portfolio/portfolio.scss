@@ -27,34 +27,6 @@ h2 {
   }
 }
 
-// .devider-left {
-//   display: flex;
-//   justify-self: end;
-//   align-items: center;
-
-//   > div {
-//     height: 4px;
-//     border-radius: 2px;
-//     width: 80px;
-//     background-color: $bright-purple;
-//   }
-
-//   @media (max-width: 600px) {
-//     width: 48px;
-//   }
-
-//   @media (max-width: 360px) {
-//     .devider-left {
-//       width: 100%;
-//       justify-self: stretch;
-//     }
-
-//     .devider-left > div {
-//       width: 100%;
-//     }
-//   }
-// }
-
 .devider-left {
   display: flex;
   justify-self: end;
