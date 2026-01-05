@@ -1,42 +1,39 @@
 <section class="about max-width">
     <div class="about-content">
-        <h2 class="about-title">About me</h2>
+        <h2 class="about-title">{{aboutMe.TITLE}}</h2>
 
-        <p class="about-description">
-            Write some information about yourself that is IT related. Why are you passionate about coding?
-            What is your source of inspiration for improving your programming skills?
-        </p>
+        <p class="about-description">{{aboutMe.SUBTITLE}}</p>
 
         <div class="about-mindset">
+            @for (points of aboutMe.POINTS; track $index) {
             <div class="about-mindset-item">
+                <div class="about-icon-wrapper">
+                    <img src="/images/icons/{{icons[$index]}}" alt="">
+                </div>
+                <span class="about-mindset-text">{{points}}</span>
+            </div>
+            }
+
+            <!-- <div class="about-mindset-item">
                 <div class="about-icon-wrapper">
                     <img src="/images/icons/location_icon_small.svg" alt="">
                 </div>
-                <span class="about-mindset-text">
-                    Where are you located? Are you open to different ways of working, such as working remotely
-                    or even relocating?
-                </span>
+                <span class="about-mindset-text">{{aboutMe.POINTS[0]}}</span>
             </div>
 
             <div class="about-mindset-item">
                 <div class="about-icon-wrapper">
                     <img src="/images/icons/bulb_icon_small.svg" alt="">
                 </div>
-                <span class="about-mindset-text">
-                    Show that you are open-minded. Are you enthusiastic about learning new technologies and
-                    continually improving your skills?
-                </span>
+                <span class="about-mindset-text">{{aboutMe.POINTS[1]}}</span>
             </div>
 
             <div class="about-mindset-item">
                 <div class="about-icon-wrapper">
                     <img src="/images/icons/puzzle_icon_small.svg" alt="">
                 </div>
-                <span class="about-mindset-text">
-                    A brief description of your problem-solving approach. Do you learn from each challenge as
-                    you search for the most efficient or elegant solution?
-                </span>
-            </div>
+                <span class="about-mindset-text">{{aboutMe.POINTS[2]}}</span>
+            </div> -->
         </div>
     </div>
 
