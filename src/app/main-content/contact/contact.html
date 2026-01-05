@@ -1,44 +1,41 @@
 <section class="contact max-width">
     <div class="contact-title">
         <div class="divider"></div>
-        <h2 class="headline">Contact</h2>
+        <h2 class="headline">{{contact.TITLE}}</h2>
     </div>
     <div class="contact-form-container site-padding">
         <div class="contact-text">
-            <h3>Got a problem to solve?</h3>
-            <p>
-                Encourage people to contact you and describe what role you are interested in. Show that you will add
-                value to their projects through your work.
-            </p>
-            <p>Need a Frontend developer? <b>Contact me!</b></p>
+            <h3>{{contact.SUBTITLE}}</h3>
+            <p>{{contact.DESCRIPTION[0]}}</p>
+            <p>{{contact.DESCRIPTION[1]}} <b>{{contact.DESCRIPTION[2]}}</b></p>
         </div>
         <div class="container">
             <form action="action_page.php">
                 <div>
                     <input class="input-container" [(ngModel)]="name" type="text" id="name" name="name"
-                        placeholder="Your name...">
+                        placeholder={{contact.INPUTS[0]}}>
                     <span></span>
                 </div>
                 <div>
                     <input class="input-container" [(ngModel)]="email" type="email" id="email" name="lastname"
-                        placeholder="Your email...">
+                        placeholder={{contact.INPUTS[1]}}>
                     <span></span>
                 </div>
                 <textarea [(ngModel)]="message" class="input-container" id="subject" name="subject"
-                    placeholder="Write something..." style="height:200px"></textarea>
+                    placeholder={{contact.INPUTS[2]}} style="height:200px"></textarea>
                 <div class="privacy">
                     <label class="privacy-container">
                         <input (click)="privacyChecked($event)" type="checkbox">
                         <span class="privacy-span">
-                            I've read the <a href="">privacy policy</a> and agree to the processing of my
-                            data as outlined.
+                            {{contact.PRIVACY.TEXT[0]}} <a href="">{{contact.PRIVACY.TEXT[1]}}</a>
+                            {{contact.PRIVACY.TEXT[2]}}
                         </span>
                     </label>
-                    <p *ngIf="!privacyPolicy" class="privacy-warning">Please accept the privacy police</p>
+                    <p *ngIf="!privacyPolicy" class="privacy-warning">{{contact.PRIVACY.WARNING}}</p>
                 </div>
                 <div class="submit-container">
                     <button disabled id="submit-btn" class="btn-primary transform-top-center" type="submit">
-                        <span>Send a message :)</span>
+                        <span>{{contact.BTN}}</span>
                     </button>
                 </div>
             </form>

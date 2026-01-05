@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import en from '../../assets/common.en.json';
 
 @Component({
   selector: 'app-contact',
@@ -13,6 +14,7 @@ export class Contact {
   name: string = '';
   email: string = '';
   message: string = '';
+  contact: any = en.CONTACT;
 
   constructor() {}
 

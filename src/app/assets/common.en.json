@@ -30,22 +30,22 @@
   },
   "PORTFOLIO": [
     {
-      "TITEL": "Join",
+      "TITLE": "Join",
       "TECHSTACK": ["JavaScript", "CSS", "HTML", "Firebase"],
       "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
     },
     {
-      "TITEL": "1-Bit Horror Game",
+      "TITLE": "1-Bit Horror Game",
       "TECHSTACK": ["JavaScript', 'CSS', 'HTML"],
       "DESCRIPTION": "A jump, run, and throw game built using object-oriented principles. Collect coins and rare fireballs scattered across the map to defeat skeletons and a dangerous cyclops—who can only be defeated using these scarce fireballs."
     },
     {
-      "TITEL": "Pokedex",
+      "TITLE": "Pokedex",
       "TECHSTACK": ["JavaScript', 'CSS', 'HTML"],
       "DESCRIPTION": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
     },
     {
-      "TITEL": "Ring of Fire",
+      "TITLE": "Ring of Fire",
       "TECHSTACK": ["JavaScript', 'CSS', 'HTML', 'Firebase"],
       "DESCRIPTION": "An Angular-based multiplayer game using Firebase for real-time data synchronization and player state management."
     }
@@ -65,8 +65,9 @@
     }
   ],
   "CONTACT": {
-    "TITEL": "",
-    "SUBTITLE": "",
+    "TITLE": "Contact",
+    "SUBTITLE": "Got a problem to solve?",
+
     "DESCRIPTION": [
       "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
       "Need a Frontend developer?",
@@ -78,7 +79,7 @@
         "privacy policy",
         "and agree to the processing of my data as outlined."
       ],
-      "WARNIMG": "Please accept the privacy police"
+      "WARNING": "Please accept the privacy police"
     },
     "INPUTS": ["Your name...", "Your email...", "Write something..."],
     "BTN": "Send a message :)"
