@@ -1,0 +1,87 @@
+{
+  "ABOUT_ME": {
+    "TITLE": "About me",
+    "SUBTITLE": "Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
+    "POINTS": [
+      "Where are you located? Are you open to different ways of working, such as working remotely or even relocating?",
+      "Show that you are open-minded. Are you enthusiastic about learning new technologies and continually improving your skills?",
+      "A brief description of your problem-solving approach. Do you learn from each challenge as you search for the most efficient or elegant solution?"
+    ]
+  },
+
+  "MY_SKILLS": {
+    "HEADLINE": "My skills",
+    "INTRO": "Showcase of technologies I have worked with.",
+    "CTA": "Get in touch",
+    "LOOKING_FOR": "Looking for another skill",
+    "ICONS_LABELS": [
+      "html",
+      "css",
+      "JavaScript",
+      "TypeScript",
+      "Angular",
+      "Firebase",
+      "Git",
+      "REST-API",
+      "Scrum",
+      "Material Design",
+      "Continually learning"
+    ]
+  },
+  "PORTFOLIO": [
+    {
+      "TITEL": "Join",
+      "TECHSTACK": ["JavaScript", "CSS", "HTML", "Firebase"],
+      "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+    },
+    {
+      "TITEL": "1-Bit Horror Game",
+      "TECHSTACK": ["JavaScript', 'CSS', 'HTML"],
+      "DESCRIPTION": "A jump, run, and throw game built using object-oriented principles. Collect coins and rare fireballs scattered across the map to defeat skeletons and a dangerous cyclops—who can only be defeated using these scarce fireballs."
+    },
+    {
+      "TITEL": "Pokedex",
+      "TECHSTACK": ["JavaScript', 'CSS', 'HTML"],
+      "DESCRIPTION": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
+    },
+    {
+      "TITEL": "Ring of Fire",
+      "TECHSTACK": ["JavaScript', 'CSS', 'HTML', 'Firebase"],
+      "DESCRIPTION": "An Angular-based multiplayer game using Firebase for real-time data synchronization and player state management."
+    }
+  ],
+  "TESTIMONIALS": [
+    {
+      "NAME": "V. Schuster - Team Partner",
+      "QUOTE": "Henning really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment."
+    },
+    {
+      "NAME": "E.Eichinger - Team Partner",
+      "QUOTE": "Henning was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals."
+    },
+    {
+      "NAME": "I.Nuber - Frontend Engineer",
+      "QUOTE": "It was a great pleasure to work with Michael. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well."
+    }
+  ],
+  "CONTACT": {
+    "TITEL": "",
+    "SUBTITLE": "",
+    "DESCRIPTION": [
+      "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
+      "Need a Frontend developer?",
+      "Contact me!"
+    ],
+    "PRIVACY": {
+      "TEXT": [
+        "I've read the",
+        "privacy policy",
+        "and agree to the processing of my data as outlined."
+      ],
+      "WARNIMG": "Please accept the privacy police"
+    },
+    "INPUTS": ["Your name...", "Your email...", "Write something..."],
+    "BTN": "Send a message :)"
+  },
+  "NAV": ["About me", "My skills", "Portfolio", "Contact"]
+}
