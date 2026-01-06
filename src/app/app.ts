@@ -8,7 +8,7 @@ import { NavbarMobile } from './navbar-mobile/navbar-mobile';
   selector: 'app-root',
   imports: [RouterOutlet, Navbar, Footer, NavbarMobile],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
 export class App {
   protected readonly title = signal('portfolio');

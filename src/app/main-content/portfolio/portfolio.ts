@@ -3,7 +3,7 @@ import { ProjectCard } from './project-card/project-card';
 import { CommonModule } from '@angular/common';
 import en from '../../assets/common.en.json';
 import { ICONS } from '../../config/icons.config';
-import { cardTemplate } from '../../../models/card.model';
+import { Card } from '../../../models/card.model';
 
 @Component({
   selector: 'app-portfolio',
@@ -24,12 +24,7 @@ export class Portfolio implements OnInit {
 
   buildProjectCards() {
     this.portfolio.forEach((project, i) => {
-      let card = new cardTemplate(
-        project.TITLE,
-        project.TECHSTACK,
-        project.DESCRIPTION,
-        this.icons[i]
-      );
+      let card = new Card(project.TITLE, project.TECHSTACK, project.DESCRIPTION, this.icons[i]);
 
       this.projects.push(card);
     });

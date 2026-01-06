@@ -1,4 +1,4 @@
-export class cardTemplate {
+export class Card {
   name;
   techstack;
   description;

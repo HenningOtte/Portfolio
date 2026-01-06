@@ -1,0 +1,93 @@
+{
+  "ABOUT_ME": {
+    "TITLE": "Über mich",
+    "SUBTITLE": "Schreibe einige Informationen über dich, die mit IT zu tun haben. Warum begeistert dich das Programmieren? Was inspiriert dich, deine Programmierfähigkeiten stetig zu verbessern?",
+    "POINTS": [
+      "Wo bist du ansässig? Bist du offen für verschiedene Arbeitsmodelle, wie zum Beispiel Remote-Arbeit oder sogar einen Standortwechsel?",
+      "Zeige, dass du aufgeschlossen bist. Begeistert es dich, neue Technologien zu erlernen und deine Fähigkeiten kontinuierlich weiterzuentwickeln?",
+      "Eine kurze Beschreibung deiner Herangehensweise an Problemlösungen. Lernst du aus jeder Herausforderung, während du nach der effizientesten oder elegantesten Lösung suchst?"
+    ]
+  },
+
+  "MY_SKILLS": {
+    "HEADLINE": "Meine Fähigkeiten",
+    "INTRO": "Überblick über Frontend-Technologien, mit denen ich gearbeitet habe.",
+    "CTA": "Kontakt aufnehmen",
+    "LOOKING_FOR": ["Auf der Suche nach", "einer weiteren Fähigkeit"],
+    "LEARNING": "Ich bin motiviert, neue Technologien und Frameworks zu lernen und anzuwenden.",
+    "ICONS_LABELS": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Angular",
+      "Firebase",
+      "Git",
+      "REST-API",
+      "Scrum",
+      "Material Design",
+      "Kontinuierliches Lernen"
+    ]
+  },
+
+  "PORTFOLIO": [
+    {
+      "TITLE": "Join",
+      "TECHSTACK": ["JavaScript", "CSS", "HTML", "Firebase"],
+      "DESCRIPTION": "Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu."
+    },
+    {
+      "TITLE": "1-Bit Horror Game",
+      "TECHSTACK": ["JavaScript", "CSS", "HTML"],
+      "DESCRIPTION": "Ein Jump-and-Run-Spiel mit Wurfmechaniken, das auf objektorientierten Prinzipien basiert. Sammle Münzen und seltene Feuerbälle auf der Karte, um Skelette und einen gefährlichen Zyklopen zu besiegen – dieser kann nur mit den seltenen Feuerbällen bezwungen werden."
+    },
+    {
+      "TITLE": "Pokedex",
+      "TECHSTACK": ["JavaScript", "CSS", "HTML"],
+      "DESCRIPTION": "Basierend auf der PokéAPI: Eine einfache Bibliothek zum Abrufen und Katalogisieren von Pokémon-Informationen."
+    },
+    {
+      "TITLE": "Ring of Fire",
+      "TECHSTACK": ["JavaScript", "CSS", "HTML", "Firebase"],
+      "DESCRIPTION": "Ein Angular-basiertes Multiplayer-Spiel, das Firebase für Echtzeit-Datensynchronisation und das Management von Spielerzuständen nutzt."
+    }
+  ],
+
+  "TESTIMONIALS": [
+    {
+      "NAME": "V. Schuster – Teamkollege",
+      "QUOTE": "Henning hat das Team mit seiner großartigen Organisation und klaren Kommunikation wirklich zusammengehalten. Ohne sein Engagement wären wir nicht so weit gekommen."
+    },
+    {
+      "NAME": "E. Eichinger – Teamkollege",
+      "QUOTE": "Henning war ein hervorragender Teamkollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben maßgeblich dazu beigetragen, unsere Ziele zu erreichen."
+    },
+    {
+      "NAME": "I. Nuber – Frontend Engineer",
+      "QUOTE": "Es war eine große Freude, mit Michael zusammenzuarbeiten. Er weiß, wie man Teammitglieder motiviert und fördert, um die bestmögliche Arbeit zu präsentieren, und bringt stets wertvolle Ideen in Brainstormings ein. Auch für das Wohlbefinden der Teammitglieder hatte er immer ein offenes Ohr und stand mit Humor und Hilfsbereitschaft zur Seite."
+    }
+  ],
+
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "SUBTITLE": "Ein Problem zu lösen?",
+
+    "DESCRIPTION": [
+      "Ermutige Menschen, dich zu kontaktieren, und beschreibe, für welche Rolle du dich interessierst. Zeige, welchen Mehrwert du durch deine Arbeit in ihre Projekte einbringst.",
+      "Du brauchst einen Frontend-Entwickler?",
+      "Kontaktiere mich!"
+    ],
+    "PRIVACY": {
+      "TEXT": [
+        "Ich habe die",
+        "Datenschutzerklärung",
+        "gelesen und stimme der beschriebenen Verarbeitung meiner Daten zu."
+      ],
+      "WARNING": "Bitte akzeptiere die Datenschutzerklärung"
+    },
+    "INPUTS": ["Dein Name...", "Deine E-Mail...", "Schreibe etwas..."],
+    "BTN": "Nachricht senden :)"
+  },
+
+  "NAV": ["Über mich", "Meine Fähigkeiten", "Portfolio", "Kontakt"]
+}

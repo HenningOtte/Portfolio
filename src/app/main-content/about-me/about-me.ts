@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import en from '../../assets/common.en.json';
+import de from '../../assets/common.de.json';
 import { ICONS } from '../../config/icons.config';
+import { LanguageService } from '../../services/language-service';
 
 @Component({
   selector: 'app-about-me',
@@ -9,11 +11,14 @@ import { ICONS } from '../../config/icons.config';
   templateUrl: './about-me.html',
   styleUrl: './about-me.scss',
 })
-export class AboutMe {
-  aboutMe = en.ABOUT_ME;
+export class AboutMe implements OnInit {
+  languageService = inject(LanguageService);
   icons = ICONS.ABOUT_ME;
+  aboutMe = en.ABOUT_ME;
 
-  ngOnInit(): void {
-    console.log(this.aboutMe.POINTS[0]);
+  ngOnInit() {
+    this.languageService.lang.subscribe((lang) => {
+      this.aboutMe = lang == 'en' ? en.ABOUT_ME : de.ABOUT_ME;
+    });
   }
 }
