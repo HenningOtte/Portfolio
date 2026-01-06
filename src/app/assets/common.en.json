@@ -11,9 +11,10 @@
 
   "MY_SKILLS": {
     "HEADLINE": "My skills",
-    "INTRO": "Showcase of technologies I have worked with.",
+    "INTRO": "Showcase of front-end technologies I have worked with.",
     "CTA": "Get in touch",
-    "LOOKING_FOR": "Looking for another skill",
+    "LOOKING_FOR": ["Looking for", "another skill"],
+    "LEARNING": "I’m eager to learn and apply new technologies and frameworks.",
     "ICONS_LABELS": [
       "html",
       "css",
