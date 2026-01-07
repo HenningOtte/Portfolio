@@ -1,8 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import en from '../../assets/common.en.json';
-import de from '../../assets/common.de.json';
-import { ICONS } from '../../config/icons.config';
 import { LanguageService } from '../../services/language-service';
 
 @Component({
@@ -13,12 +10,13 @@ import { LanguageService } from '../../services/language-service';
 })
 export class AboutMe implements OnInit {
   languageService = inject(LanguageService);
-  icons = ICONS.ABOUT_ME;
-  aboutMe = en.ABOUT_ME;
+  icons = this.languageService.icons.ABOUT_ME;
+  aboutMe: any;
 
   ngOnInit() {
     this.languageService.lang.subscribe((lang) => {
-      this.aboutMe = lang == 'en' ? en.ABOUT_ME : de.ABOUT_ME;
+      this.aboutMe =
+        lang == 'en' ? this.languageService.en.ABOUT_ME : this.languageService.de.ABOUT_ME;
     });
   }
 }

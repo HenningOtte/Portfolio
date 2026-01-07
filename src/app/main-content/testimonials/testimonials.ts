@@ -1,8 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { Testimonial } from '../../../models/testimonial.model';
-import { ICONS } from '../../config/icons.config';
-import en from '../../assets/common.en.json';
+import { LanguageService } from '../../services/language-service';
 
 @Component({
   selector: 'app-testimonials',
@@ -11,25 +10,27 @@ import en from '../../assets/common.en.json';
   styleUrl: './testimonials.scss',
 })
 export class Testimonials implements OnInit {
+  languageService = inject(LanguageService);
+  en: any;
+  icons = this.languageService.icons.TESTIMONIALS;
+  currentIndex = 0;
+  arrTestimonials: { name: string; quote: string; img: string }[] = [];
+
   constructor() {}
 
-  en = en.TESTIMONIALS;
-  icons = ICONS.TESTIMONIALS;
-  currentIndex = 0;
-
-  testimonials: { name: string; quote: string; img: string }[] = [];
-
   ngOnInit(): void {
-    this.buildTestimonials();
+    this.languageService.lang.subscribe((lang) => {
+      this.en =
+        lang == 'en' ? this.languageService.en.TESTIMONIALS : this.languageService.de.TESTIMONIALS;
+      this.arrTestimonials = [];
+      this.buildTestimonials();
+    });
   }
 
   buildTestimonials(): void {
-    const testimonialsData = this.en;
-
-    testimonialsData.forEach((item, i) => {
+    this.en.forEach((item: any, i: number) => {
       const testimonial = new Testimonial(item.NAME, item.QUOTE, this.icons[i]);
-
-      this.testimonials.push(testimonial);
+      this.arrTestimonials.push(testimonial);
     });
   }
 

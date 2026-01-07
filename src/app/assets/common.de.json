@@ -30,28 +30,31 @@
     ]
   },
 
-  "PORTFOLIO": [
-    {
-      "TITLE": "Join",
-      "TECHSTACK": ["JavaScript", "CSS", "HTML", "Firebase"],
-      "DESCRIPTION": "Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu."
-    },
-    {
-      "TITLE": "1-Bit Horror Game",
-      "TECHSTACK": ["JavaScript", "CSS", "HTML"],
-      "DESCRIPTION": "Ein Jump-and-Run-Spiel mit Wurfmechaniken, das auf objektorientierten Prinzipien basiert. Sammle Münzen und seltene Feuerbälle auf der Karte, um Skelette und einen gefährlichen Zyklopen zu besiegen – dieser kann nur mit den seltenen Feuerbällen bezwungen werden."
-    },
-    {
-      "TITLE": "Pokedex",
-      "TECHSTACK": ["JavaScript", "CSS", "HTML"],
-      "DESCRIPTION": "Basierend auf der PokéAPI: Eine einfache Bibliothek zum Abrufen und Katalogisieren von Pokémon-Informationen."
-    },
-    {
-      "TITLE": "Ring of Fire",
-      "TECHSTACK": ["JavaScript", "CSS", "HTML", "Firebase"],
-      "DESCRIPTION": "Ein Angular-basiertes Multiplayer-Spiel, das Firebase für Echtzeit-Datensynchronisation und das Management von Spielerzuständen nutzt."
-    }
-  ],
+  "PORTFOLIO": {
+    "INTRO": "Entdecke meine Projekte und erlebe meine Skills in Aktion.",
+    "CARDS": [
+      {
+        "TITLE": "Join",
+        "TECHSTACK": ["JavaScript", "CSS", "HTML", "Firebase"],
+        "DESCRIPTION": "Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu."
+      },
+      {
+        "TITLE": "1-Bit Horror Game",
+        "TECHSTACK": ["JavaScript", "CSS", "HTML"],
+        "DESCRIPTION": "Ein Jump-and-Run-Spiel mit Wurfmechaniken, das auf objektorientierten Prinzipien basiert. Sammle Münzen und seltene Feuerbälle auf der Karte, um Skelette und einen gefährlichen Zyklopen zu besiegen – dieser kann nur mit den seltenen Feuerbällen bezwungen werden."
+      },
+      {
+        "TITLE": "Pokedex",
+        "TECHSTACK": ["JavaScript", "CSS", "HTML"],
+        "DESCRIPTION": "Basierend auf der PokéAPI: Eine einfache Bibliothek zum Abrufen und Katalogisieren von Pokémon-Informationen."
+      },
+      {
+        "TITLE": "Ring of Fire",
+        "TECHSTACK": ["JavaScript", "CSS", "HTML", "Firebase"],
+        "DESCRIPTION": "Ein Angular-basiertes Multiplayer-Spiel, das Firebase für Echtzeit-Datensynchronisation und das Management von Spielerzuständen nutzt."
+      }
+    ]
+  },
 
   "TESTIMONIALS": [
     {

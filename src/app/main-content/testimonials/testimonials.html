@@ -1,19 +1,19 @@
 <section class="testimonials max-width">
-    @for (item of testimonials; track $index) {
+    @for (item of arrTestimonials; track $index) {
     <div *ngIf="$index == currentIndex" class="testimonial">
         <img class="double-quotes" src="/images/icons/double_quotes.svg" alt="author-img">
         <div class="content">
             <div class="quote">
-                <span>{{testimonials[$index].quote}}</span>
+                <span>{{arrTestimonials[$index].quote}}</span>
             </div>
             <div class="author">
                 <div class="divider-author"></div>
-                <span>{{testimonials[$index].name}}</span>
+                <span>{{arrTestimonials[$index].name}}</span>
             </div>
         </div>
         <div class="profile">
             <div class="avatar"
-                [ngStyle]="{'background-image' : 'url(/images/profiles/'+ testimonials[$index].img + ')'}">
+                [ngStyle]="{'background-image' : 'url(/images/profiles/'+ arrTestimonials[$index].img + ')'}">
             </div>
             <div class="divider"></div>
         </div>

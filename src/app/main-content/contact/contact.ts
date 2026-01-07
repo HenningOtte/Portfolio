@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import en from '../../assets/common.en.json';
+import { LanguageService } from '../../services/language-service';
 
 @Component({
   selector: 'app-contact',
@@ -9,14 +10,22 @@ import en from '../../assets/common.en.json';
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
 })
-export class Contact {
+export class Contact implements OnInit {
   privacyPolicy: boolean = false;
+  languageService = inject(LanguageService);
   name: string = '';
   email: string = '';
   message: string = '';
-  contact: any = en.CONTACT;
+  contact: any;
 
   constructor() {}
+
+  ngOnInit(): void {
+    this.languageService.lang.subscribe((lang) => {
+      this.contact =
+        lang == 'en' ? this.languageService.en.CONTACT : this.languageService.de.CONTACT;
+    });
+  }
 
   privacyChecked(event: Event) {
     const target = event.target as HTMLInputElement;
