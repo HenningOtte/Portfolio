@@ -48,7 +48,8 @@
 }
 
 body {
-  background-color: $widescreen-blue;
+  // background-color: $widescreen-blue;
+  background-color: $bg-darkblue;
   color: white;
   @media (min-width: 1440px) {
     width: 100%;
