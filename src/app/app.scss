@@ -1,0 +1,14 @@
+@use './styles/variables' as *;
+
+.layout-container {
+  width: 100%;
+  margin-inline: auto;
+  background-color: $bg-darkblue;
+}
+
+/* Ab Ultrawide */
+@media (min-width: 1680px) {
+  .layout-container {
+    max-width: 1680px;
+  }
+}

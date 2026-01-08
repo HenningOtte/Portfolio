@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import en from '../../assets/common.en.json';
 import { LanguageService } from '../../services/language-service';
 
 @Component({

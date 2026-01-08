@@ -13,7 +13,8 @@
         <a href="">Portfolio</a>
         <a href="">Contact</a>
         <div class="languages">
-            <button class="btn-en">EN</button>/<button class="btn-de">DE</button>
+            <button class="btn-en" (click)="LanguageService.switchLang('en')">EN</button>/<button class="btn-de"
+                (click)="LanguageService.switchLang('de')">DE</button>
         </div>
     </div>
 </nav>

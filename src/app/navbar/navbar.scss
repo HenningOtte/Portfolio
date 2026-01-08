@@ -1,16 +1,22 @@
 @use '../styles/variables' as *;
 
 .navbar {
+  width: 100%;
   position: fixed;
+  background-color: $bg-darkblue;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.navbar_container {
   width: 100%;
   height: 96px;
-  background-color: $bg-darkblue;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 24px;
-  padding-bottom: 24px;
-  z-index: 100;
 }
 
 .navbar_logo {

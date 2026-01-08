@@ -1,16 +1,17 @@
-<nav class="navbar max-width site-padding">
-  <img class="navbar_logo" src="/images/icons/Henning_Logo.svg" alt="">
+<nav class="navbar">
+  <div class="navbar_container max-width site-padding">
+    <img class="navbar_logo" src="/images/icons/Henning_Logo.svg" alt="">
+    <div class="navbar_actions">
+      <div class="navbar_links">
+        <a>About</a>
+        <a>Skills</a>
+        <a>Portfolio</a>
+      </div>
 
-  <div class="navbar_actions">
-    <div class="navbar_links">
-      <a>About</a>
-      <a>Skills</a>
-      <a>Portfolio</a>
-    </div>
-
-    <div class="navbar_languages">
-      <button (click)="LanguageService.switchLang('de')">DE</button>
-      <button (click)="LanguageService.switchLang('en')">EN</button>
+      <div class="navbar_languages">
+        <button (click)="LanguageService.switchLang('de')">DE</button>
+        <button (click)="LanguageService.switchLang('en')">EN</button>
+      </div>
     </div>
   </div>
 </nav>
