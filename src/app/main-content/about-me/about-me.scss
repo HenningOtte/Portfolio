@@ -1,6 +1,7 @@
 @use '../../styles/variables' as *;
 
 .about {
+  scroll-margin-top: 160px;
   position: relative;
   z-index: 10;
   width: 100%;

@@ -3,14 +3,19 @@
     <img class="navbar_logo" src="/images/icons/Henning_Logo.svg" alt="">
     <div class="navbar_actions">
       <div class="navbar_links">
-        <a>About</a>
-        <a>Skills</a>
-        <a>Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
       </div>
 
       <div class="navbar_languages">
-        <button (click)="LanguageService.switchLang('de')">DE</button>
-        <button (click)="LanguageService.switchLang('en')">EN</button>
+        <button [ngClass]="{lang_btn_on: LanguageService.lang.value == 'de', 
+          lang_btn_off: LanguageService.lang.value == 'en'}" (click)="LanguageService.switchLang('de')">
+          DE
+        </button>
+        <button (click)="LanguageService.switchLang('en')" [ngClass]="{lang_btn_on: LanguageService.lang.value == 'en',
+          lang_btn_off: LanguageService.lang.value == 'de'}">
+          EN</button>
       </div>
     </div>
   </div>

@@ -8,13 +8,19 @@
     </button>
 
     <div [ngClass]="{'push-in-nav' : isMenuOpen}" class="nav-links">
-        <a href="">About me</a>
-        <a href="">My skills</a>
-        <a href="">Portfolio</a>
-        <a href="">Contact</a>
+        <a href="#about" (click)="toggleMenu()">About me</a>
+        <a href="#skills" (click)="toggleMenu()">My skills</a>
+        <a href="#portfolio" (click)="toggleMenu()">Portfolio</a>
+        <a href="#contact" (click)="toggleMenu()">Contact</a>
         <div class="languages">
-            <button class="btn-en" (click)="LanguageService.switchLang('en')">EN</button>/<button class="btn-de"
-                (click)="LanguageService.switchLang('de')">DE</button>
+            <button class="btn-en" [ngStyle]="{color: LanguageService.lang.value === 'en' ? '#70E61C' : 'white'}"
+                (click)="LanguageService.switchLang('en'); toggleMenu()">
+                EN
+            </button>/
+            <button class="btn-de" (click)="LanguageService.switchLang('de'); toggleMenu()"
+                [ngStyle]="{color: LanguageService.lang.value === 'de' ? '#70E61C' : 'white'}">
+                DE
+            </button>
         </div>
     </div>
 </nav>

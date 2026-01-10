@@ -18,8 +18,6 @@ export class LanguageService {
   }
 
   checkLanguage(lang: string) {
-    console.log(lang);
-    
     return lang == 'en' ? true : false;
   }
 }
