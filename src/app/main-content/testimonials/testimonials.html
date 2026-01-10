@@ -1,8 +1,8 @@
 <section class="testimonials max-width">
     @for (item of arrTestimonials; track $index) {
     <div *ngIf="$index == currentIndex" class="testimonial">
-        <img class="double-quotes" src="/images/icons/double_quotes.svg" alt="author-img">
         <div class="content">
+            <img class="double-quotes" src="/images/icons/double_quotes.svg" alt="author-img">
             <div class="quote">
                 <span>{{arrTestimonials[$index].quote}}</span>
             </div>

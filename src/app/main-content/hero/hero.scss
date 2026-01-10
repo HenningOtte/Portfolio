@@ -38,6 +38,19 @@
   }
 }
 
+.arm-pic {
+  position: absolute;
+  z-index: 3 !important;
+  width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  display: block;
+  z-index: 1;
+  @media (max-width: 1280px) and (orientation: portrait) {
+    max-height: 60vh;
+  }
+}
+
 .hero-shadow {
   position: absolute;
   width: 100%;
