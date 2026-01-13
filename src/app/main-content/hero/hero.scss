@@ -7,16 +7,25 @@
   display: grid;
   grid-template-rows: minmax(0, 1fr) auto;
   overflow-x: hidden;
+
+  @media (max-width: 665.5px) {
+    margin-bottom: 120px;
+  }
 }
 
 .hero-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: end;
+
   @media (max-width: 1280px) and (orientation: portrait) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr min-content;
   }
+  // @media (max-width: 800px) {
+  //   grid-template-columns: 1fr;
+  //   grid-template-rows: 1fr min-content;
+  // }
 }
 
 .hero-img {
@@ -33,9 +42,13 @@
   object-fit: contain;
   display: block;
   z-index: 1;
+
   @media (max-width: 1280px) and (orientation: portrait) {
     max-height: 60vh;
   }
+  // @media (max-width: 800px) {
+  //   max-height: 60vh;
+  // }
 }
 
 .arm-pic {
@@ -46,9 +59,13 @@
   object-fit: contain;
   display: block;
   z-index: 1;
+
   @media (max-width: 1280px) and (orientation: portrait) {
     max-height: 60vh;
   }
+  // @media (max-width: 800px) {
+  //   max-height: 60vh;
+  // }
 }
 
 .hero-shadow {
@@ -75,12 +92,12 @@
   @media (max-width: 1280px) and (orientation: portrait) {
     padding-right: 0;
     padding-top: 0;
-    padding-bottom: 56px;
+    padding-bottom: 54px;
     z-index: 3;
   }
 
-  @media (max-width: 420px) and (orientation: portrait) {
-    padding-bottom: 24px;
+  @media (max-width: 480px) and (orientation: portrait) {
+    // padding-bottom: 64px;
   }
 }
 
@@ -214,8 +231,11 @@
   display: flex;
   padding-bottom: 8px;
 
-  @media (max-width: 666px) {
-    display: none;
+  @media (max-width: 665.5px) {
+    position: absolute;
+    z-index: 200 !important;
+    bottom: -80px;
+    // display: none;
   }
 }
 
@@ -266,7 +286,6 @@
   padding-right: 80px;
   left: 50%;
   transform: translateX(-50%);
-  // left: 0;
   z-index: 3;
   position: absolute;
   right: 80px;
@@ -318,12 +337,12 @@
     bottom: -400px;
   }
 
-  @media (max-width: 560px) and (orientation: portrait) {
-    bottom: -452px;
+  @media (max-width: 666px) and (orientation: portrait) {
+    bottom: -490px;
   }
 
   @media (max-width: 420px) and (orientation: portrait) {
-    bottom: -480px;
+    bottom: -520px;
   }
 }
 
