@@ -213,6 +213,10 @@
   align-items: flex-end;
   display: flex;
   padding-bottom: 8px;
+
+  @media (max-width: 666px) {
+    display: none;
+  }
 }
 
 .devider {

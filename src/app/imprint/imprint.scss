@@ -1,7 +1,7 @@
 @use '../styles/variables' as *;
 
 .imprint {
-  padding-top: 160px;
+  padding-top: 136px;
   padding-bottom: 160px;
 }
 
@@ -95,6 +95,30 @@ a {
   }
 }
 
+span {
+  color: $bright-purple;
+}
+
 .imprint-header {
   margin-bottom: 40px;
+}
+
+.arrow-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.arrow-mobile {
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: 3px solid $bright-purple;
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: url(/images/icons/arrow_left_purple.svg);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
