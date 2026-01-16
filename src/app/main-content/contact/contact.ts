@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, inject } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { LanguageService } from '../../services/language-service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -12,9 +13,16 @@ import { LanguageService } from '../../services/language-service';
 export class Contact implements OnInit {
   privacyPolicy: boolean = false;
   languageService = inject(LanguageService);
-  name: string = '';
-  email: string = '';
-  message: string = '';
+
+  http = inject(HttpClient);
+
+  mailTest = true;
+
+  contactData = {
+    name: '',
+    email: '',
+    message: '',
+  };
   contact: any;
 
   constructor() {}
@@ -32,5 +40,30 @@ export class Contact implements OnInit {
 
     const checkbox: any = document.querySelector('.privacy-container')?.children[0];
     this.privacyPolicy = checkbox.checked;
+  }
+
+  post = {
+    endPoint: 'https://henningotte-code.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
+  onSubmit(ngForm: NgForm) {
+    if (ngForm.submitted && ngForm.form.valid) {
+      this.http.post(this.post.endPoint, this.post.body(this.contactData)).subscribe({
+        next: (response) => {
+          ngForm.resetForm();
+        },
+        error: (error) => {
+          console.error(error);
+        },
+        complete: () => console.info('send post complete'),
+      });
+    }
   }
 }
