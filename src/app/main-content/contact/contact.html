@@ -11,40 +11,69 @@
         </div>
         <div class="container">
             <form action="action_page.php" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-                <div>
-                    <input #userName="ngModel" class="input-container" [(ngModel)]="contactData.name" type="text"
-                        id="name" name="name" placeholder={{contact.INPUTS[0]}} minlength="4" maxlength="20" required>
-                    @if (!userName.valid && userName.untouched) {
-                    <span class="privacy-warning">Please enter your Name!</span>
-                    }
+                <div class="input-container">
+                    <input #userName="ngModel" class="contact-input" [(ngModel)]="contactData.name" type="text"
+                        id="name" name="name" placeholder={{contact.INPUTS[0]}} minlength="3" maxlength="40"
+                        [ngClass]="{'is-uninvalid' : userName.invalid && userName.touched, 'is-invalid' : userName.valid && userName.touched}"
+                        required>
+                    <div class="privacy-warning">
+                        @if (userName.invalid && userName.touched) {<span>Please enter your Name!</span>}
+                        @if (userName.touched && userName.invalid) {
+                        <img class="exclamation-mark" src="/images/icons/input_warning.svg" alt="input warning">
+                        }
+                        @if (userName.touched && userName.valid) {
+                        <img class="exclamation-mark" src="/images/icons/input_valid.svg" alt="input valid">
+                        }
+                    </div>
                 </div>
-                <div>
-                    <input #userMail="ngModel" class="input-container" [(ngModel)]="contactData.email" type="email"
-                        id="email" name="lastname" placeholder={{contact.INPUTS[1]}} required
-                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                    @if (!userMail.valid && userMail.untouched) {
-                    <span class="privacy-warning">Please enter a email!</span>
-                    }
+                <div class="input-container">
+                    <input #userMail="ngModel" class="contact-input" [(ngModel)]="contactData.email" type="email"
+                        id="email" name="lastname" placeholder={{contact.INPUTS[1]}}
+                        [ngClass]="{'is-uninvalid' : userMail.invalid && userMail.touched, 'is-invalid' : userMail.valid && userMail.touched}"
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" maxlength="40" required>
+                    <div class="privacy-warning">
+                        @if (!userMail.valid && userMail.touched) {<span>Please enter a email!</span>}
+                        @if (userMail.touched && userMail.invalid) {
+                        <img class="exclamation-mark" src="/images/icons/input_warning.svg" alt="input warning">
+                        }
+                        @if (userMail.touched && userMail.valid) {
+                        <img class="exclamation-mark" src="/images/icons/input_valid.svg" alt="input valid">
+                        }
+                    </div>
                 </div>
-                <textarea #message="ngModel" [(ngModel)]="contactData.message" class="input-container" id="subject"
-                    name="subject" placeholder={{contact.INPUTS[2]}} style="height:200px" minlength="8" maxlength="100"
-                    required></textarea>
-                @if (!message.valid && message.untouched && !message.disabled) {
-                <span class="privacy-warning">Please enter a message!</span>
-                }
+                <div class="input-container">
+                    <textarea #message="ngModel" [(ngModel)]="contactData.message" class="contact-input" id="subject"
+                        name="subject" placeholder={{contact.INPUTS[2]}} style="height:200px" minlength="5"
+                        maxlength="100"
+                        [ngClass]="{'is-uninvalid' : message.invalid && message.touched, 'is-invalid' : message.valid && message.touched}"
+                        required></textarea>
+                    <div class="privacy-warning">
+                        @if (message.invalid && message.touched && !message.disabled) {
+                        <span>Your message is empty</span>}
+                        @if (message.touched && message.invalid) {
+                        <img class="exclamation-mark" src="/images/icons/input_warning.svg" alt="input warning">
+                        }
+                        @if (message.touched && message.valid) {
+                        <img class="exclamation-mark" src="/images/icons/input_valid.svg" alt="input valid">
+                        }
+                    </div>
+                </div>
                 <div class="privacy">
                     <label class="privacy-container">
-                        <input (click)="privacyChecked($event)" type="checkbox">
+                        <input name="privacyAccepted" #pivacyBtn="ngModel" type="checkbox"
+                            [(ngModel)]="contactData.privacyAccepted" type="checkbox" required>
                         <span class="privacy-span">
                             {{contact.PRIVACY.TEXT[0]}}
                             <a href="">{{contact.PRIVACY.TEXT[1]}}</a>
                             {{contact.PRIVACY.TEXT[2]}}
                         </span>
                     </label>
-                    <p *ngIf="!privacyPolicy" class="privacy-warning">{{contact.PRIVACY.WARNING}}</p>
+                    @if (pivacyBtn.invalid && pivacyBtn.touched) {
+                    <p class="privacy-warning">{{contact.PRIVACY.WARNING}}</p>}
                 </div>
                 <div class="submit-container">
-                    <button id="submit-btn" class="btn-primary transform-top-center" type="submit">
+                    <button id="submit-btn" class="btn-primary" [ngClass]="{'transform-top-center' : contactForm.valid}"
+                        type="submit" [disabled]="contactForm.invalid">
                         <span>{{contact.BTN}}</span>
                     </button>
                 </div>

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { LanguageService } from '../../services/language-service';
@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, NgOptimizedImage],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
 })
@@ -22,6 +22,7 @@ export class Contact implements OnInit {
     name: '',
     email: '',
     message: '',
+    privacyAccepted: false,
   };
   contact: any;
 

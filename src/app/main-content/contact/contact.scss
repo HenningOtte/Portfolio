@@ -1,6 +1,10 @@
 @use '../../styles/variables' as *;
 @use '../../styles/buttons' as *;
 
+textarea {
+  resize: none !important;
+}
+
 .contact {
   scroll-margin-top: 160px;
   width: 100%;
@@ -70,12 +74,15 @@ form {
 }
 
 .input-container {
+  position: relative;
+}
+
+.contact-input {
   width: 100%;
-  margin-bottom: 16px;
   background-color: transparent;
   border: 1px solid $bright-purple;
   border-radius: 6px;
-  padding: 8px;
+  padding: 12px 18px;
   color: white;
   cursor: pointer;
   outline: none;
@@ -84,6 +91,9 @@ form {
   }
   &::placeholder {
     color: white;
+  }
+  &:focus {
+    border: 1px solid #1cdae6;
   }
 }
 
@@ -132,6 +142,7 @@ form {
       background-image: url('/images/icons/checkbox_checked.svg');
     }
   }
+
   @media (max-width: 1200px) {
     align-items: baseline;
   }
@@ -139,7 +150,19 @@ form {
 
 .privacy-span {
   position: relative;
-  bottom: 6px;
+  top: 2px;
+
+  > a {
+    text-decoration: none;
+    color: $bright-purple;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    top: -7px;
+  }
 }
 
 .privacy {
@@ -152,7 +175,22 @@ form {
 }
 
 .privacy-warning {
-  color: red;
+  height: 18px;
+  color: $warning-red;
   font-size: 12px;
-  margin-bottom: 24px;
+  margin: 3px 0 6px 0;
+}
+
+.is-invalid {
+  border: 1px solid $valid-green;
+}
+
+.is-uninvalid {
+  border: 1px solid $warning-red;
+}
+
+.exclamation-mark {
+  position: absolute;
+  right: 18px;
+  top: 10px;
 }

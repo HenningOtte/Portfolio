@@ -10,16 +10,10 @@
   border: none;
   cursor: pointer;
   filter: drop-shadow(0px 4px 4px rgb(0, 0, 0, 0.3));
+  transition: transform 0.2s ease, background-color 0.2s ease;
 
   &:hover {
-    transform: scale(1.15);
-    letter-spacing: 0.5px;
     background-color: $bright-purple;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-
-    > span {
-      font-size: 16px;
-    }
   }
 
   &:disabled {
@@ -57,10 +51,24 @@
 
 .transform-top-center {
   transform-origin: top center;
+  &:hover {
+    letter-spacing: 0.5px;
+    transform: scale(1.2);
+    > span {
+      font-size: 16px;
+    }
+  }
 }
 
 .transform-top-right {
   transform-origin: top right;
+  &:hover {
+    letter-spacing: 0.5px;
+    transform: scale(1.2);
+    > span {
+      font-size: 16px;
+    }
+  }
 }
 
 .arrow-up {
@@ -94,7 +102,11 @@
   pointer-events: all;
   transition: all 0.2s ease;
   &:hover {
+    letter-spacing: 0.5px;
     transform: scale(1.2);
+    > span {
+      font-size: 16px;
+    }
   }
 
   > img {
