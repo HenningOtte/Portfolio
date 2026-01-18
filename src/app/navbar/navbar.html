@@ -1,14 +1,14 @@
 <nav class="navbar">
-  <div class="navbar_container max-width site-padding">
-    <img class="navbar_logo" src="/images/icons/Henning_Logo.svg" alt="">
-    <div class="navbar_actions">
-      <div class="navbar_links">
+  <div class="navbar-container max-width site-padding">
+    <img class="navbar-logo" src="/images/icons/Henning_Logo.svg" alt="">
+    <div class="navbar-actions">
+      <div class="navbar-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
       </div>
 
-      <div class="navbar_languages">
+      <div class="navbar-languages">
         <button [ngClass]="{lang_btn_on: LanguageService.lang.value == 'de', 
           lang_btn_off: LanguageService.lang.value == 'en'}" (click)="LanguageService.switchLang('de')">
           DE

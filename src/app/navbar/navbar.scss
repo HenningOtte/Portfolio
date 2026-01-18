@@ -10,7 +10,7 @@
   z-index: 100;
 }
 
-.navbar_container {
+.navbar-container {
   width: 100%;
   height: 96px;
   display: flex;
@@ -19,11 +19,11 @@
   padding-top: 24px;
 }
 
-.navbar_logo {
+.navbar-logo {
   height: 40px;
 }
 
-.navbar_actions {
+.navbar-actions {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,7 +31,7 @@
   font-weight: 300;
 }
 
-.navbar_links {
+.navbar-links {
   margin-right: 80px;
   display: flex;
   gap: 24px;
@@ -46,12 +46,12 @@
   }
 }
 
-.navbar_languages {
+.navbar-languages {
   display: flex;
   gap: 16px;
 }
 
-.lang_btn_off {
+.lang-btn-off {
   font-size: 16px;
   color: white;
   width: 40px;
@@ -67,7 +67,7 @@
   }
 }
 
-.lang_btn_on {
+.lang-btn-on {
   background-color: $neon-green;
   font-size: 16px;
   color: white;
