@@ -3,6 +3,16 @@
 
 textarea {
   resize: none !important;
+
+  &::-webkit-scrollbar {
+    border-radius: 0 5px 5px 0;
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $bright-purple;
+    border-radius: 5px;
+  }
 }
 
 .contact {
