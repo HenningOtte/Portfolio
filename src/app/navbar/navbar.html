@@ -9,12 +9,12 @@
       </div>
 
       <div class="navbar-languages">
-        <button [ngClass]="{lang_btn_on: LanguageService.lang.value == 'de', 
-          lang_btn_off: LanguageService.lang.value == 'en'}" (click)="LanguageService.switchLang('de')">
+        <button [ngClass]="{'lang-btn-on': LanguageService.lang.value == 'de', 
+          'lang-btn-off': LanguageService.lang.value == 'en'}" (click)="LanguageService.switchLang('de')">
           DE
         </button>
-        <button (click)="LanguageService.switchLang('en')" [ngClass]="{lang_btn_on: LanguageService.lang.value == 'en',
-          lang_btn_off: LanguageService.lang.value == 'de'}">
+        <button (click)="LanguageService.switchLang('en')" [ngClass]="{'lang-btn-on': LanguageService.lang.value == 'en',
+          'lang-btn-off': LanguageService.lang.value == 'de'}">
           EN</button>
       </div>
     </div>

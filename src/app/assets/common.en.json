@@ -88,5 +88,69 @@
     "INPUTS": ["Your name...", "Your email...", "Write something..."],
     "BTN": "Send a message :)"
   },
-  "NAV": ["About me", "My skills", "Portfolio", "Contact"]
+  "NAV": ["About me", "My skills", "Portfolio", "Contact"],
+  "PRIVACYPOLICY": {
+    "TITLE": "Privacy Policy",
+
+    "CONTROLLER": {
+      "TITLE": "Data Controller",
+      "NAME": "Henning Otte",
+      "STREET": "Steinberg 51",
+      "CITY": "31832 Springe",
+      "COUNTRY": "Germany",
+      "EMAIL": "[HenningOtte91@gmail.com](mailto:HenningOtte91@gmail.com)"
+    },
+
+    "ACCESSDATA": {
+      "TITLE": "Access Data",
+      "SUBTITLE": "When you visit this website, the hosting provider automatically collects certain information, including:",
+      "BULLETPOINTS": [
+        "IP address",
+        "Date and time of the request",
+        "Browser type and version",
+        "Operating system"
+      ],
+      "TEXT": "This data is collected for technical purposes only, to ensure the stability and security of the website. It is not combined with other data sources."
+    },
+
+    "CONTACTFORM": {
+      "TITLE": "Contact Form",
+      "TEXT_1": "If you contact me via the contact form, the information you provide (such as your name, email address, and message) will be processed solely for the purpose of handling your request.",
+      "TEXT_2": "The processing of this data is based on Article 6(1)(b) GDPR (performance of a contract or pre-contractual measures) or Article 6(1)(f) GDPR (legitimate interest in responding to inquiries).",
+      "TEXT_3": "Your data will not be shared with third parties without your consent and will only be used to process your request."
+    },
+
+    "DATASTORAGE": {
+      "TITLE": "Data Storage",
+      "TEXT": "Your personal data will be stored only for as long as necessary to process your inquiry or as required by applicable legal obligations."
+    },
+
+    "RIGHTS": {
+      "TITLE": "Your Rights",
+      "INTRO": "You have the right to:",
+      "BULLETPOINTS": [
+        "Request information about your stored personal data",
+        "Request correction of inaccurate data",
+        "Request deletion of your data",
+        "Request restriction of processing",
+        "Object to the processing of your personal data"
+      ],
+      "TEXT": "To exercise these rights, please contact me using the email address provided above."
+    },
+
+    "ENCRYPTION": {
+      "TITLE": "SSL or TLS Encryption",
+      "TEXT": "This website uses SSL or TLS encryption for security reasons. This ensures that data transmitted to this website cannot be read by third parties."
+    },
+
+    "CHANGES": {
+      "TITLE": "Changes to This Privacy Policy",
+      "TEXT": "I reserve the right to update this Privacy Policy if necessary to reflect legal requirements or changes to this website."
+    },
+
+    "LASTUPDATED": {
+      "TITLE": "Last updated",
+      "DATE": "18.01.2026"
+    }
+  }
 }

@@ -21,6 +21,10 @@ textarea {
   display: flex;
   flex-direction: column;
   padding-bottom: 80px;
+
+  background-image: url('/images/shadows/purple_shadow_footer.svg');
+  background-repeat: no-repeat;
+  background-position: left -380px bottom -960px;
 }
 
 .contact-title {
@@ -42,6 +46,7 @@ textarea {
 }
 
 .contact-form-container {
+  z-index: 1;
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -203,4 +208,16 @@ form {
   position: absolute;
   right: 18px;
   top: 10px;
+}
+
+.shadow-purple {
+  background-color: red;
+  position: absolute;
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+  pointer-events: none;
+  > img {
+    transform: translateY(400px) translateX(-400px);
+  }
 }

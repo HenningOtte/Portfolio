@@ -3,9 +3,12 @@
 .portfolio {
   scroll-margin-top: 160px;
   margin-bottom: 80px;
+  position: relative;
 }
 
 .header {
+  position: relative;
+  z-index: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -94,11 +97,45 @@ h2 {
 }
 
 .projects {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  background-image: url('/images/shadows/purple_shadow_portfolio.svg');
+  background-repeat: no-repeat;
+  background-position: left -500px center;
+  background-size: 1000px;
+
   @media (max-width: 930px) {
     gap: 40px;
+  }
+}
+
+.shadow-green-top {
+  top: -400px !important;
+  position: absolute;
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+  pointer-events: none;
+  > img {
+    transform: translateX(-600px);
+  }
+}
+
+.shadow-green-bottom {
+  display: flex;
+  flex-direction: row-reverse;
+  bottom: -600px;
+  position: absolute;
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+  pointer-events: none;
+  > img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1) translateX(-600px);
   }
 }

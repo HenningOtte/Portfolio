@@ -7,6 +7,7 @@
   display: grid;
   grid-template-rows: minmax(0, 1fr) auto;
   overflow-x: hidden;
+  margin-bottom: 120px;
 
   @media (max-width: 665.5px) {
     margin-bottom: 120px;
@@ -219,7 +220,7 @@
 
   @media (max-width: 665.5px) {
     position: absolute;
-    z-index: 200 !important;
+    z-index: 3 !important;
     bottom: -80px;
   }
 }

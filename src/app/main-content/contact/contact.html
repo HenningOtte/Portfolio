@@ -30,7 +30,7 @@
                     <input #userMail="ngModel" class="contact-input" [(ngModel)]="contactData.email" type="email"
                         id="email" name="lastname" placeholder={{contact.INPUTS[1]}}
                         [ngClass]="{'is-uninvalid' : userMail.invalid && userMail.touched, 'is-invalid' : userMail.valid && userMail.touched}"
-                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" maxlength="40" required>
+                        pattern="[a-zA-Z0-9._%+/-]+@[a-zA-Z0-9./-]+/.[a-zA-Z]{2,}" maxlength="40" required>
                     <div class="privacy-warning">
                         @if (!userMail.valid && userMail.touched) {<span>Please enter a email!</span>}
                         @if (userMail.touched && userMail.invalid) {
@@ -81,4 +81,7 @@
         </div>
     </div>
     <div class="arrow-up"><a href="#hero"></a></div>
+    <!-- <div class="shadow-purple">
+        <img src="/images/shadows/purple_shadow_footer.svg" alt="purple shadow">
+    </div> -->
 </section>
