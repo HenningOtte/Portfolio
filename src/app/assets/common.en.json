@@ -1,4 +1,8 @@
 {
+  "HERO": {
+    "BUTTON": "Let's talk!",
+    "SCROLLDOWN": "Scroll down"
+  },
   "ABOUT_ME": {
     "TITLE": "About me",
     "SUBTITLE": "Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",

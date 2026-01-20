@@ -1,4 +1,8 @@
 {
+  "HERO": {
+    "BUTTON": "Lass uns reden!",
+    "SCROLLDOWN": "Weiter scrollen"
+  },
   "ABOUT_ME": {
     "TITLE": "Über mich",
     "SUBTITLE": "Schreibe einige Informationen über dich, die mit IT zu tun haben. Warum begeistert dich das Programmieren? Was inspiriert dich, deine Programmierfähigkeiten stetig zu verbessern?",
