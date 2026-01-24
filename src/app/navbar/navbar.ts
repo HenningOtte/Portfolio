@@ -12,5 +12,7 @@ import { CommonModule } from '@angular/common';
 export class Navbar implements OnInit {
   LanguageService = inject(LanguageService);
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.LanguageService.loadLocalStorage();
+  }
 }

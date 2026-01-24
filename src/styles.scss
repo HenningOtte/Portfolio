@@ -132,3 +132,14 @@ h3 {
 .max-width {
   max-width: 1680px;
 }
+
+.scroll-margin {
+  scroll-margin-top: 160px;
+
+  @media (max-width: 1080px) {
+    scroll-margin-top: 140px;
+  }
+  @media (max-width: 680px) {
+    scroll-margin-top: 100px;
+  }
+}

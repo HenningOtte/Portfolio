@@ -9,8 +9,10 @@ import { LanguageService } from '../../services/language-service';
   styleUrl: './hero.scss',
 })
 export class Hero implements OnInit {
-  icons = ['git_icon.svg', 'linkedin_icon.svg', 'email_icon.svg'];
+  // icons = ['git_icon.svg', 'linkedin_icon.svg', 'email_icon.svg'];
+
   languageService = inject(LanguageService);
+  icons = this.languageService.icons.HERO;
   hero: any;
 
   ngOnInit(): void {

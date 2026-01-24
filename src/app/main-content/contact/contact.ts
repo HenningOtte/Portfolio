@@ -3,7 +3,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { LanguageService } from '../../services/language-service';
 import { HttpClient } from '@angular/common/http';
-import { RouterLink } from '@angular/router';
+import { EventType, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -19,7 +19,7 @@ export class Contact implements OnInit {
 
   mailTest = true;
 
-  contactData = {
+  contactData: { name: string; email: string; message: string; privacyAccepted: boolean } = {
     name: '',
     email: '',
     message: '',
@@ -36,9 +36,20 @@ export class Contact implements OnInit {
     });
   }
 
+  validContactform() {}
+
+  trimWhitespace(e: any) {
+    const keys: ['name', 'message', 'email'] = ['name', 'message', 'email'];
+    keys.forEach((key) => {
+      if (key === e.target.id) {
+        console.log(e.target.value);
+        this.contactData[key] = e.target.value.trim();
+      }
+    });
+  }
+
   privacyChecked(event: Event) {
     const target = event.target as HTMLInputElement;
-    console.log(target.checked);
 
     const checkbox: any = document.querySelector('.privacy-container')?.children[0];
     this.privacyPolicy = checkbox.checked;

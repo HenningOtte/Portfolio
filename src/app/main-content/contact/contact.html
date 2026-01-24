@@ -1,4 +1,4 @@
-<section class="contact max-width" id="contact">
+<section class="contact scroll-margin max-width" id="contact">
     <div class="contact-title">
         <div class="divider"></div>
         <h2 class="headline">{{contact.TITLE}}</h2>
@@ -12,8 +12,9 @@
         <div class="container">
             <form action="action_page.php" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <div class="input-container">
-                    <input #userName="ngModel" class="contact-input" [(ngModel)]="contactData.name" type="text"
-                        id="name" name="name" placeholder={{contact.INPUTS[0]}} minlength="3" maxlength="40"
+                    <input (blur)="trimWhitespace($event)" #userName="ngModel" class="contact-input"
+                        [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                        placeholder={{contact.INPUTS[0]}} minlength="3" maxlength="40"
                         [ngClass]="{'is-uninvalid' : userName.invalid && userName.touched, 'is-invalid' : userName.valid && userName.touched}"
                         required>
                     <div class="privacy-warning">
@@ -27,10 +28,11 @@
                     </div>
                 </div>
                 <div class="input-container">
-                    <input #userMail="ngModel" class="contact-input" [(ngModel)]="contactData.email" type="email"
-                        id="email" name="lastname" placeholder={{contact.INPUTS[1]}}
+                    <input (blur)="trimWhitespace($event)" #userMail="ngModel" class="contact-input"
+                        [(ngModel)]="contactData.email" type="email" id="email" name="lastname"
+                        placeholder={{contact.INPUTS[1]}}
                         [ngClass]="{'is-uninvalid' : userMail.invalid && userMail.touched, 'is-invalid' : userMail.valid && userMail.touched}"
-                        pattern="[a-zA-Z0-9._%+/-]+@[a-zA-Z0-9./-]+/.[a-zA-Z]{2,}" maxlength="40" required>
+                        pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" maxlength="40" required>
                     <div class="privacy-warning">
                         @if (!userMail.valid && userMail.touched) {<span>Please enter a email!</span>}
                         @if (userMail.touched && userMail.invalid) {
@@ -42,9 +44,9 @@
                     </div>
                 </div>
                 <div class="input-container">
-                    <textarea #message="ngModel" [(ngModel)]="contactData.message" class="contact-input" id="subject"
-                        name="subject" placeholder={{contact.INPUTS[2]}} style="height:200px" minlength="5"
-                        maxlength="800"
+                    <textarea id="message" (blur)="trimWhitespace($event)" #message="ngModel"
+                        [(ngModel)]="contactData.message" class="contact-input" name="subject"
+                        placeholder={{contact.INPUTS[2]}} style="height:200px" minlength="5" maxlength="800"
                         [ngClass]="{'is-uninvalid' : message.invalid && message.touched, 'is-invalid' : message.valid && message.touched}"
                         required></textarea>
                     <div class="privacy-warning">

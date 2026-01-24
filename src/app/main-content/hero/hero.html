@@ -27,9 +27,9 @@
             <div class="devider"></div>
             <div class="social-icons">
                 @for (item of icons; track $index) {
-                <button class="hero-sm-btn">
-                    <img src="/images/icons/{{item}}" alt="git icon">
-                </button>
+                <a href="{{item.link}}" class="hero-sm-btn">
+                    <img src="/images/icons/{{item.img}}" alt="git icon">
+                </a>
                 }
             </div>
             <span>HenningOtte91@gmail.com</span>

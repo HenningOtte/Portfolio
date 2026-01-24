@@ -1,4 +1,18 @@
 export const ICONS = {
+  HERO: [
+    {
+      img: 'git_icon.svg',
+      link: 'https://github.com/HenningOtte',
+    },
+    {
+      img: 'linkedin_icon.svg',
+      link: 'https://www.linkedin.com/in/henning-otte-106a01316',
+    },
+    {
+      img: 'email_icon.svg',
+      link: '#contact',
+    },
+  ],
   ABOUT_ME: ['location_icon_small.svg', 'bulb_icon_small.svg', 'puzzle_icon_small.svg'],
   MY_SKILLS: [
     'html_icon.svg',
