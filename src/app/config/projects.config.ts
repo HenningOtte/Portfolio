@@ -1,7 +1,7 @@
 export const PROJECT_LINKS = [
   {
     live: 'https://henningotte.github.io/6-join/',
-    github: 'https://github.com/HenningOtte/Join-Open-source-task-management-for-teams',
+    github: 'https://github.com/HenningOtte/6-join',
   },
   {
     live: 'https://henningotte.github.io/1bit-horror-game/',

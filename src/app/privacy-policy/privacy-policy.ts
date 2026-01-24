@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,4 +7,9 @@ import { RouterLink } from '@angular/router';
   templateUrl: './privacy-policy.html',
   styleUrl: './privacy-policy.scss',
 })
-export class PrivacyPolicy {}
+export class PrivacyPolicy implements OnInit {
+  ngOnInit(): void {
+    const privacy = document.getElementById('privacy');
+    privacy?.scrollIntoView();
+  }
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,4 +7,9 @@ import { RouterLink } from '@angular/router';
   templateUrl: './imprint.html',
   styleUrl: './imprint.scss',
 })
-export class Imprint {}
+export class Imprint implements OnInit {
+  ngOnInit(): void {
+    const imprint = document.getElementById('imprint');
+    imprint?.scrollIntoView();
+  }
+}

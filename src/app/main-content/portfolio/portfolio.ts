@@ -42,7 +42,7 @@ export class Portfolio implements OnInit {
         project.DESCRIPTION,
         this.icons[i],
         PROJECT_LINKS[i].live,
-        PROJECT_LINKS[i].github
+        PROJECT_LINKS[i].github,
       );
       this.projects.push(card);
     });

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { LanguageService } from '../services/language-service';
 
 @Component({
   selector: 'app-footer',
@@ -8,5 +9,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './footer.scss',
 })
 export class Footer {
-  icons = ['git_icon.svg', 'linkedin_icon.svg', 'email_icon.svg'];
+  languageService = inject(LanguageService);
+  // icons = ['git_icon.svg', 'linkedin_icon.svg', 'email_icon.svg'];
+  icons = this.languageService.icons.HERO;
 }
