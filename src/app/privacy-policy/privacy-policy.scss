@@ -55,6 +55,7 @@
 h2 {
   color: $neon-green;
   padding: 0 32px;
+  // word-break: break-word;
 
   @media (max-width: 800px) {
     grid-column: 1;

@@ -12,12 +12,14 @@
       "Eine kurze Beschreibung deiner Herangehensweise an Problemlösungen. Lernst du aus jeder Herausforderung, während du nach der effizientesten oder elegantesten Lösung suchst?"
     ]
   },
-
   "MY_SKILLS": {
     "HEADLINE": "Meine Fähigkeiten",
     "INTRO": "Überblick über Frontend-Technologien, mit denen ich gearbeitet habe.",
     "CTA": "Kontakt aufnehmen",
-    "LOOKING_FOR": ["Auf der Suche nach", "einer weiteren Fähigkeit"],
+    "LOOKING_FOR": [
+      "Auf der Suche nach",
+      "einer weiteren Fähigkeit"
+    ],
     "LEARNING": "Ich bin motiviert, neue Technologien und Frameworks zu lernen und anzuwenden.",
     "ICONS_LABELS": [
       "HTML",
@@ -33,33 +35,49 @@
       "Kontinuierliches Lernen"
     ]
   },
-
   "PORTFOLIO": {
     "INTRO": "Entdecke meine Projekte und erlebe meine Skills in Aktion.",
     "CARDS": [
       {
         "TITLE": "Join",
-        "TECHSTACK": ["JavaScript", "CSS", "HTML", "Firebase"],
+        "TECHSTACK": [
+          "JavaScript",
+          "CSS",
+          "HTML",
+          "Firebase"
+        ],
         "DESCRIPTION": "Ein Aufgabenmanager, inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu."
       },
       {
         "TITLE": "1-Bit Horror Game",
-        "TECHSTACK": ["JavaScript", "CSS", "HTML"],
+        "TECHSTACK": [
+          "JavaScript",
+          "CSS",
+          "HTML"
+        ],
         "DESCRIPTION": "Ein Jump-and-Run-Spiel mit Wurfmechaniken, das auf objektorientierten Prinzipien basiert. Sammle Münzen und seltene Feuerbälle auf der Karte, um Skelette und einen gefährlichen Zyklopen zu besiegen – dieser kann nur mit den seltenen Feuerbällen bezwungen werden."
       },
       {
         "TITLE": "Pokedex",
-        "TECHSTACK": ["JavaScript", "CSS", "HTML"],
+        "TECHSTACK": [
+          "JavaScript",
+          "CSS",
+          "HTML"
+        ],
         "DESCRIPTION": "Basierend auf der PokéAPI: Eine einfache Bibliothek zum Abrufen und Katalogisieren von Pokémon-Informationen."
       },
       {
         "TITLE": "Ring of Fire",
-        "TECHSTACK": ["JavaScript", "CSS", "HTML", "Firebase"],
+        "TECHSTACK": [
+          "JavaScript",
+          "CSS",
+          "HTML",
+          "Firebase"
+        ],
         "DESCRIPTION": "Ein Angular-basiertes Multiplayer-Spiel, das Firebase für Echtzeit-Datensynchronisation und das Management von Spielerzuständen nutzt."
       }
     ]
   },
-
   "TESTIMONIALS": [
     {
       "NAME": "V. Schuster – Teamkollege",
@@ -74,11 +92,9 @@
       "QUOTE": "Es war eine große Freude, mit Michael zusammenzuarbeiten. Er weiß, wie man Teammitglieder motiviert und fördert, um die bestmögliche Arbeit zu präsentieren, und bringt stets wertvolle Ideen in Brainstormings ein. Auch für das Wohlbefinden der Teammitglieder hatte er immer ein offenes Ohr und stand mit Humor und Hilfsbereitschaft zur Seite."
     }
   ],
-
   "CONTACT": {
     "TITLE": "Kontakt",
     "SUBTITLE": "Ein Problem zu lösen?",
-
     "DESCRIPTION": [
       "Ermutige Menschen, dich zu kontaktieren, und beschreibe, für welche Rolle du dich interessierst. Zeige, welchen Mehrwert du durch deine Arbeit in ihre Projekte einbringst.",
       "Du brauchst einen Frontend-Entwickler?",
@@ -92,73 +108,120 @@
       ],
       "WARNING": "Bitte akzeptiere die Datenschutzerklärung"
     },
-    "INPUTS": ["Dein Name...", "Deine E-Mail...", "Schreibe etwas..."],
+    "INPUTS": [
+      "Dein Name...",
+      "Deine E-Mail...",
+      "Schreibe etwas..."
+    ],
     "BTN": "Nachricht senden :)"
   },
-
-  "NAV": ["Über mich", "Meine Fähigkeiten", "Portfolio", "Kontakt"],
+  "NAV": [
+    "Über mich",
+    "Meine Fähigkeiten",
+    "Portfolio",
+    "Kontakt"
+  ],
   "PRIVACYPOLICY": {
-    "TITLE": "Datenschutz-Erklärung",
-
+    "TITLE": "Datenschutzerklärung",
     "CONTROLLER": {
-      "TITLE": "Data Controller",
+      "TITLE": "Verantwortlicher",
       "NAME": "Henning Otte",
       "STREET": "Steinberg 51",
       "CITY": "31832 Springe",
-      "COUNTRY": "Germany",
-      "EMAIL": "[HenningOtte91@gmail.com](mailto:HenningOtte91@gmail.com)"
+      "COUNTRY": "Deutschland",
+      "EMAIL": "HenningOtte91@gmail.com"
     },
-
     "ACCESSDATA": {
-      "TITLE": "Access Data",
-      "SUBTITLE": "When you visit this website, the hosting provider automatically collects certain information, including:",
+      "TITLE": "Zugriffsdaten",
+      "SUBTITLE": "Beim Besuch dieser Website erhebt der Hosting-Anbieter automatisch bestimmte Informationen, darunter:",
       "BULLETPOINTS": [
-        "IP address",
-        "Date and time of the request",
-        "Browser type and version",
-        "Operating system"
+        "IP-Adresse",
+        "Datum und Uhrzeit der Anfrage",
+        "Browsertyp und Browserversion",
+        "Betriebssystem"
       ],
-      "TEXT": "This data is collected for technical purposes only, to ensure the stability and security of the website. It is not combined with other data sources."
+      "TEXT": "Diese Daten werden ausschließlich zu technischen Zwecken erhoben, um die Stabilität und Sicherheit der Website zu gewährleisten. Eine Zusammenführung mit anderen Datenquellen erfolgt nicht."
     },
-
     "CONTACTFORM": {
-      "TITLE": "Contact Form",
-      "TEXT_1": "If you contact me via the contact form, the information you provide (such as your name, email address, and message) will be processed solely for the purpose of handling your request.",
-      "TEXT_2": "The processing of this data is based on Article 6(1)(b) GDPR (performance of a contract or pre-contractual measures) or Article 6(1)(f) GDPR (legitimate interest in responding to inquiries).",
-      "TEXT_3": "Your data will not be shared with third parties without your consent and will only be used to process your request."
+      "TITLE": "Kontaktformular",
+      "TEXT": [
+        "Wenn Sie mich über das Kontaktformular kontaktieren, werden die von Ihnen angegebenen Daten (z. B. Name, E-Mail-Adresse und Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet.",
+        "Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung oder vorvertragliche Maßnahmen) oder Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung von Anfragen).",
+        "Ihre Daten werden ohne Ihre Einwilligung nicht an Dritte weitergegeben und ausschließlich zur Bearbeitung Ihrer Anfrage verwendet."
+      ]
     },
-
     "DATASTORAGE": {
-      "TITLE": "Data Storage",
-      "TEXT": "Your personal data will be stored only for as long as necessary to process your inquiry or as required by applicable legal obligations."
+      "TITLE": "Speicherdauer",
+      "TEXT": "Ihre personenbezogenen Daten werden nur so lange gespeichert, wie dies zur Bearbeitung Ihrer Anfrage erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen."
     },
-
     "RIGHTS": {
-      "TITLE": "Your Rights",
-      "INTRO": "You have the right to:",
+      "TITLE": "Ihre Rechte",
+      "INTRO": "Sie haben das Recht:",
       "BULLETPOINTS": [
-        "Request information about your stored personal data",
-        "Request correction of inaccurate data",
-        "Request deletion of your data",
-        "Request restriction of processing",
-        "Object to the processing of your personal data"
+        "Auskunft über Ihre gespeicherten personenbezogenen Daten zu erhalten",
+        "die Berichtigung unrichtiger Daten zu verlangen",
+        "die Löschung Ihrer Daten zu verlangen",
+        "die Einschränkung der Verarbeitung zu verlangen",
+        "der Verarbeitung Ihrer personenbezogenen Daten zu widersprechen"
       ],
-      "TEXT": "To exercise these rights, please contact me using the email address provided above."
+      "TEXT": "Zur Ausübung Ihrer Rechte wenden Sie sich bitte an die oben angegebene E-Mail-Adresse."
     },
-
     "ENCRYPTION": {
-      "TITLE": "SSL or TLS Encryption",
-      "TEXT": "This website uses SSL or TLS encryption for security reasons. This ensures that data transmitted to this website cannot be read by third parties."
+      "TITLE": "SSL- bzw. TLS-Verschlüsselung",
+      "TEXT": "Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung. Dadurch wird gewährleistet, dass übermittelte Daten nicht von Dritten mitgelesen werden können."
     },
-
     "CHANGES": {
-      "TITLE": "Changes to This Privacy Policy",
-      "TEXT": "I reserve the right to update this Privacy Policy if necessary to reflect legal requirements or changes to this website."
+      "TITLE": "Änderungen dieser Datenschutzerklärung",
+      "TEXT": "Ich behalte mir vor, diese Datenschutzerklärung anzupassen, um sie an geänderte rechtliche Anforderungen oder Änderungen dieser Website anzupassen."
     },
-
     "LASTUPDATED": {
-      "TITLE": "Last updated",
+      "TITLE": "Stand",
       "DATE": "18.01.2026"
     }
+  },
+  "LEGALNOTICE": {
+    "TITLE": "Impressum",
+    "IMPRINT": {
+      "TITLE": "Impressum",
+      "NAME": "Henning Otte",
+      "STREET": "Steinberg 51",
+      "CITY": "31832 Springe",
+      "COUNTRY": "Deutschland"
+    },
+    "ACCEPTTANCE": {
+      "TITLE": "Zustimmung zu den Nutzungsbedingungen",
+      "EMAIL": "HenningOtte91@gmail.com"
+    },
+    "MAINTEXT": [
+      {
+        "TITLE": "Zustimmung zu den Nutzungsbedingungen",
+        "TEXT": "Durch den Zugriff auf und die Nutzung dieser <span>Portfolio</span>-Website („<span>Portfolio</span>“) erkennen Sie die nachfolgenden Nutzungsbedingungen sowie sämtliche Richtlinien oder zukünftige Änderungen an und erklären sich damit einverstanden. Der Betreiber behält sich das Recht vor, diese Bedingungen jederzeit und ohne vorherige Ankündigung zu ändern oder zu aktualisieren."
+      },
+      {
+        "TITLE": "Zweck und Geltungsbereich der Website",
+        "TEXT": "<span>Portfolio</span> wurde im Rahmen eines studentischen Gruppenprojekts in einem Webentwicklungs-Bootcamp der <span>Developer Akademie GmbH</span> entwickelt. Die Website dient ausschließlich zu Lern- und Ausbildungszwecken und ist nicht für eine umfangreiche private oder geschäftliche Nutzung vorgesehen. Daher kann keine Gewähr für eine dauerhafte Verfügbarkeit, Zuverlässigkeit, Richtigkeit oder sonstige Qualitätsmerkmale dieses Produkts übernommen werden. <br><br> Das Design von <span>Portfolio</span> ist Eigentum der <span>Developer Akademie GmbH</span>. Eine unbefugte Nutzung, Vervielfältigung, Bearbeitung, Verbreitung oder Nachahmung des Designs ist ausdrücklich untersagt."
+      },
+      {
+        "TITLE": "Eigentum und Urheberrecht",
+        "TEXT": "Das Design und die Inhalte dieses <span>Portfolio</span> sind, sofern nicht anders angegeben, geistiges Eigentum von <span>Henning Otte</span>. Eine unbefugte Nutzung, Vervielfältigung, Bearbeitung oder Verbreitung von Inhalten ohne vorherige schriftliche Zustimmung ist untersagt."
+      },
+      {
+        "TITLE": "Schutzrechte",
+        "TEXT": "Alle auf dieser Website dargestellten Marken, Urheberrechte und sonstigen geschützten Informationen bleiben Eigentum der jeweiligen Rechteinhaber. Alle hier nicht ausdrücklich gewährten Rechte bleiben vorbehalten."
+      },
+      {
+        "TITLE": "Nutzung der Website",
+        "TEXT": "Dieses <span>Portfolio</span> darf ausschließlich zu rechtmäßigen Zwecken genutzt werden. Jeglicher Missbrauch, insbesondere für rechtswidrige Handlungen, Belästigungen oder die Verletzung von Rechten Dritter, ist strengstens untersagt. Nutzer sind allein verantwortlich für ihre Interaktionen mit der Website."
+      },
+      {
+        "TITLE": "Haftungsausschluss und Haftungsbeschränkung",
+        "TEXT": "Dieses <span>Portfolio</span> wird <em>„wie es ist“</em> bereitgestellt, ohne jegliche ausdrückliche oder stillschweigende Gewährleistungen, einschließlich, aber nicht beschränkt auf die stillschweigende Gewährleistung der Marktgängigkeit, der Eignung für einen bestimmten Zweck oder der Nichtverletzung von Rechten Dritter. Der Betreiber haftet in keinem Fall für direkte oder indirekte Schäden, die aus der Nutzung oder der Nichtverfügbarkeit dieser Website entstehen."
+      },
+      {
+        "TITLE": "Freistellung",
+        "TEXT": "Sie verpflichten sich, <span>Henning Otte</span> von sämtlichen Ansprüchen, Schäden, Verlusten, Haftungen oder Kosten freizustellen, die aus Ihrer Nutzung dieses <span>Portfolio</span> oder aus einem Verstoß gegen diese Nutzungsbedingungen entstehen."
+      }
+    ],
+    "DATE": "<span>Datum:</span> 10. Januar 2026"
   }
 }

@@ -6,93 +6,68 @@
         <div class="devider-left">
             <div></div>
         </div>
-        <h2>Privacy Policy</h2>
+        <h2>{{privacyText.TITLE.slice(0, 11)}}<wbr>{{privacyText.TITLE.slice(11, 20)}}</h2>
         <div class="devider-right">
             <div></div>
         </div>
     </div>
     <div class="info-section site-padding">
-        <h4>1. Data Controller</h4>
+        <h4>1. {{privacyText.CONTROLLER.TITLE}}</h4>
         <p>
-            Henning Otte<br>
-            Steinberg 51<br>
-            31832 Springe<br>
-            Germany
+            {{privacyText.CONTROLLER.NAME}}<br>
+            {{privacyText.CONTROLLER.STREET}}<br>
+            {{privacyText.CONTROLLER.CITY}}<br>
+            {{privacyText.CONTROLLER.COUNTRY}}
         </p>
-        <div class="email-container">Email:<a href="mailto:HenningOtte91@gmail.com"> HenningOtte91@gmail.com</a></div>
+        <div class="email-container">Email:<a href="mailto:HenningOtte91@gmail.com">
+                {{privacyText.CONTROLLER.EMAIL}}</a></div>
 
         <div class="pivacy-info-container">
-            <h4>2. Access Data</h4>
-            <p>
-                When you visit this website, the hosting provider automatically collects certain information, including:
-            </p>
+            <h4>2. {{privacyText.ACCESSDATA.TITLE}}</h4>
+            <p>{{privacyText.ACCESSDATA.SUBTITLE}}</p>
             <ul>
-                <li>IP address</li>
-                <li>Date and time of the request</li>
-                <li>Browser type and version</li>
-                <li>Operating system</li>
+                @for (item of privacyText.ACCESSDATA.BULLETPOINTS; track $index) {
+                <li>{{item}}</li>
+                }
             </ul>
-            <p>
-                This data is collected for technical purposes only, to ensure the stability and security of the website.
-                It is not combined with other data sources.
-            </p>
+            <p>{{privacyText.ACCESSDATA.TEXT}}</p>
         </div>
 
         <div class="pivacy-info-container">
-            <h4>3. Contact Form</h4>
-            <p>
-                If you contact me via the contact form, the information you provide (such as your name, email address,
-                and message) will be processed solely for the purpose of handling your request.
-            </p>
-            <p>
-                The processing of this data is based on Article 6(1)(b) GDPR (performance of a contract or
-                pre-contractual measures) or Article 6(1)(f) GDPR (legitimate interest in responding to inquiries).
-            </p>
-            <p>
-                Your data will not be shared with third parties without your consent and will only be used to process
-                your request.
-            </p>
+            <h4>3. {{privacyText.CONTACTFORM.TITLE}}</h4>
+            @for (item of privacyText.CONTACTFORM.TEXT; track $index) {
+            <p>{{item}}</p>
+            }
         </div>
 
         <div class="pivacy-info-container">
-            <h4>4. Data Storage</h4>
-            <p>
-                Your personal data will be stored only for as long as necessary to process your inquiry or as required
-                by applicable legal obligations.
-            </p>
+            <h4>4. {{privacyText.DATASTORAGE.TITLE}}</h4>
+            <p>{{privacyText.DATASTORAGE.TEXT}}</p>
         </div>
 
         <div class="pivacy-info-container">
-            <h4>5. Your Rights</h4>
-            <p>You have the right to:</p>
+            <h4>5. {{privacyText.RIGHTS.TITLE}}</h4>
+            <p>{{privacyText.RIGHTS.INTRO}}</p>
             <ul>
-                <li>Request information about your stored personal data</li>
-                <li>Request correction of inaccurate data</li>
-                <li>Request deletion of your data</li>
-                <li>Request restriction of processing</li>
-                <li>Object to the processing of your personal data</li>
+                @for (item of privacyText.RIGHTS.BULLETPOINTS; track $index) {
+                <li>{{item}}</li>
+                }
             </ul>
             <p>To exercise these rights, please contact me using the email address provided above.</p>
         </div>
 
         <div class="pivacy-info-container">
-            <h4>6. SSL or TLS Encryption</h4>
-            <p>
-                This website uses SSL or TLS encryption for security reasons. This ensures that data transmitted to this
-                website cannot be read by third parties.
-            </p>
+            <h4>6. {{privacyText.ENCRYPTION.TITLE}}</h4>
+            <p>{{privacyText.ENCRYPTION.TEXT}}</p>
         </div>
 
         <div class="pivacy-info-container">
-            <h4>7. Changes to This Privacy Policy</h4>
-            <p>
-                I reserve the right to update this Privacy Policy if necessary to reflect legal requirements or changes
-                to this website.
-            </p>
+            <h4>7. {{privacyText.CHANGES.TITLE}}</h4>
+            <p>{{privacyText.CHANGES.TEXT}}</p>
         </div>
         <div class="pivacy-info-container">
-            <h4>Last updated:</h4>
-            <p>18.01.2026</p>
+            <h4>{{privacyText.LASTUPDATED.TITLE}}</h4>
+            <p>{{privacyText.LASTUPDATED.DATE}}</p>
         </div>
     </div>
 </section>

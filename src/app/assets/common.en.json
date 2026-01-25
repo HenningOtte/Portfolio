@@ -12,12 +12,14 @@
       "A brief description of your problem-solving approach. Do you learn from each challenge as you search for the most efficient or elegant solution?"
     ]
   },
-
   "MY_SKILLS": {
     "HEADLINE": "My skills",
     "INTRO": "Showcase of front-end technologies I have worked with.",
     "CTA": "Get in touch",
-    "LOOKING_FOR": ["Looking for", "another skill"],
+    "LOOKING_FOR": [
+      "Looking for",
+      "another skill"
+    ],
     "LEARNING": "I’m eager to learn and apply new technologies and frameworks.",
     "ICONS_LABELS": [
       "html",
@@ -38,22 +40,40 @@
     "CARDS": [
       {
         "TITLE": "Join",
-        "TECHSTACK": ["JavaScript", "CSS", "HTML", "Firebase"],
+        "TECHSTACK": [
+          "JavaScript",
+          "CSS",
+          "HTML",
+          "Firebase"
+        ],
         "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
       },
       {
         "TITLE": "1-Bit Horror Game",
-        "TECHSTACK": ["JavaScript", "CSS", "HTML"],
+        "TECHSTACK": [
+          "JavaScript",
+          "CSS",
+          "HTML"
+        ],
         "DESCRIPTION": "A jump, run, and throw game built using object-oriented principles. Collect coins and rare fireballs scattered across the map to defeat skeletons and a dangerous cyclops—who can only be defeated using these scarce fireballs."
       },
       {
         "TITLE": "Pokedex",
-        "TECHSTACK": ["JavaScript", "CSS", "HTML"],
+        "TECHSTACK": [
+          "JavaScript",
+          "CSS",
+          "HTML"
+        ],
         "DESCRIPTION": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
       },
       {
         "TITLE": "Ring of Fire",
-        "TECHSTACK": ["JavaScript", "CSS", "HTML", "Firebase"],
+        "TECHSTACK": [
+          "JavaScript",
+          "CSS",
+          "HTML",
+          "Firebase"
+        ],
         "DESCRIPTION": "An Angular-based multiplayer game using Firebase for real-time data synchronization and player state management."
       }
     ]
@@ -75,7 +95,6 @@
   "CONTACT": {
     "TITLE": "Contact",
     "SUBTITLE": "Got a problem to solve?",
-
     "DESCRIPTION": [
       "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
       "Need a Frontend developer?",
@@ -89,22 +108,29 @@
       ],
       "WARNING": "Please accept the privacy police"
     },
-    "INPUTS": ["Your name...", "Your email...", "Write something..."],
+    "INPUTS": [
+      "Your name...",
+      "Your email...",
+      "Write something..."
+    ],
     "BTN": "Send a message :)"
   },
-  "NAV": ["About me", "My skills", "Portfolio", "Contact"],
+  "NAV": [
+    "About me",
+    "My skills",
+    "Portfolio",
+    "Contact"
+  ],
   "PRIVACYPOLICY": {
     "TITLE": "Privacy Policy",
-
     "CONTROLLER": {
       "TITLE": "Data Controller",
       "NAME": "Henning Otte",
       "STREET": "Steinberg 51",
       "CITY": "31832 Springe",
       "COUNTRY": "Germany",
-      "EMAIL": "[HenningOtte91@gmail.com](mailto:HenningOtte91@gmail.com)"
+      "EMAIL": "HenningOtte91@gmail.com"
     },
-
     "ACCESSDATA": {
       "TITLE": "Access Data",
       "SUBTITLE": "When you visit this website, the hosting provider automatically collects certain information, including:",
@@ -116,19 +142,18 @@
       ],
       "TEXT": "This data is collected for technical purposes only, to ensure the stability and security of the website. It is not combined with other data sources."
     },
-
     "CONTACTFORM": {
       "TITLE": "Contact Form",
-      "TEXT_1": "If you contact me via the contact form, the information you provide (such as your name, email address, and message) will be processed solely for the purpose of handling your request.",
-      "TEXT_2": "The processing of this data is based on Article 6(1)(b) GDPR (performance of a contract or pre-contractual measures) or Article 6(1)(f) GDPR (legitimate interest in responding to inquiries).",
-      "TEXT_3": "Your data will not be shared with third parties without your consent and will only be used to process your request."
+      "TEXT": [
+        "If you contact me via the contact form, the information you provide (such as your name, email address, and message) will be processed solely for the purpose of handling your request.",
+        "The processing of this data is based on Article 6(1)(b) GDPR (performance of a contract or pre-contractual measures) or Article 6(1)(f) GDPR (legitimate interest in responding to inquiries).",
+        "Your data will not be shared with third parties without your consent and will only be used to process your request."
+      ]
     },
-
     "DATASTORAGE": {
       "TITLE": "Data Storage",
       "TEXT": "Your personal data will be stored only for as long as necessary to process your inquiry or as required by applicable legal obligations."
     },
-
     "RIGHTS": {
       "TITLE": "Your Rights",
       "INTRO": "You have the right to:",
@@ -141,20 +166,62 @@
       ],
       "TEXT": "To exercise these rights, please contact me using the email address provided above."
     },
-
     "ENCRYPTION": {
       "TITLE": "SSL or TLS Encryption",
       "TEXT": "This website uses SSL or TLS encryption for security reasons. This ensures that data transmitted to this website cannot be read by third parties."
     },
-
     "CHANGES": {
       "TITLE": "Changes to This Privacy Policy",
       "TEXT": "I reserve the right to update this Privacy Policy if necessary to reflect legal requirements or changes to this website."
     },
-
     "LASTUPDATED": {
       "TITLE": "Last updated",
       "DATE": "18.01.2026"
     }
+  },
+  "LEGALNOTICE": {
+    "TITLE": "Legal Notice",
+    "IMPRINT": {
+      "TITLE": "Imprint",
+      "NAME": "Henning Otte",
+      "STREET": "Steinberg 51",
+      "CITY": "31832 Springe",
+      "COUNTRY": "Germany"
+    },
+    "ACCEPTTANCE": {
+      "TITLE": "Acceptance of Terms",
+      "EMAIL": "HenningOtte91@gmail.com"
+    },
+    "MAINTEXT": [
+      {
+        "TITLE": "Acceptance of Terms",
+        "TEXT": "By accessing and using this Portfolio website (“Portfolio”), you acknowledge and agree to the following terms and conditions, as well as any policies or amendments thereto that may be presented from time to time. The operator reserves the right to update or change these terms at any time without prior notice."
+      },
+      {
+        "TITLE": "Scope and Purpose of the Website",
+        "TEXT": "Portfolio has been developed as part of a student group project in a web development bootcamp at the Developer Akademie GmbH. It has an educational purpose and is not intended for extensive personal & business usage. As such, we cannot guarantee consistent availability, reliability, accuracy, or any other aspect of quality regarding this Product. <br><br> The design of Portfolio is owned by the Developer Akademie GmbH. Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited."
+      },
+      {
+        "TITLE": "Ownership and Copyright",
+        "TEXT": "The design and content of this Portfolio are the intellectual property of Henning Otte, unless otherwise stated. Unauthorized use, reproduction, modification, or distribution of any content without prior written consent is prohibited."
+      },
+      {
+        "TITLE": "Proprietary Rights",
+        "TEXT": "All trademarks, copyrights, and other proprietary information displayed on this website remain the property of their respective owners. Any rights not expressly granted herein are reserved."
+      },
+      {
+        "TITLE": "Use of the Website",
+        "TEXT": "This Portfolio may only be used for lawful purposes. Any misuse, including but not limited to illegal activities, harassment, or infringement of rights  of third parties, is strictly prohibited. Users are solely responsible for their interactions with the website."
+      },
+      {
+        "TITLE": "Disclaimer of Warranties and Limitation of Liability",
+        "TEXT": "This Portfolio is provided <em>“as is”</em> without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement. In no event shall the operator be liable for any direct or indirect damages arising from the use or inability to use this website."
+      },
+      {
+        "TITLE": "Indemnification",
+        "TEXT": "You agree to indemnify and hold harmless Henning Otte from any claims, damages, losses, liabilities, or expenses arising out of your use of this Portfolio or violation of these terms."
+      }
+    ],
+    "DATE": "Date: January 10, 2026"
   }
 }

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject, AfterViewInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { LanguageService } from '../services/language-service';
 
 @Component({
   selector: 'app-imprint',
@@ -7,9 +8,43 @@ import { RouterLink } from '@angular/router';
   templateUrl: './imprint.html',
   styleUrl: './imprint.scss',
 })
-export class Imprint implements OnInit {
+export class Imprint implements OnInit, AfterViewInit {
+  languageService = inject(LanguageService);
+  legalText: any;
+
   ngOnInit(): void {
-    const imprint = document.getElementById('imprint');
-    imprint?.scrollIntoView();
+    this.scrollUp();
+    this.subscribeLanguageService();
+  }
+
+  ngAfterViewInit(): void {
+    this.loadMainText();
+  }
+
+  scrollUp() {
+    const privacy = document.getElementById('imprint');
+    privacy?.scrollIntoView();
+  }
+
+  subscribeLanguageService() {
+    this.languageService.lang.subscribe((lang) => {
+      this.legalText =
+        lang == 'en' ? this.languageService.en.LEGALNOTICE : this.languageService.de.LEGALNOTICE;
+    });
+  }
+
+  loadMainText() {
+    let elementCollection = document.getElementsByClassName('main-text');
+    const words = ['Portfolio', 'Developer Akademie GmbH', 'Henning Otte'];
+
+    for (let i = 0; i < elementCollection.length; i++) {
+      let text: string = elementCollection[i].innerHTML;
+
+      words.forEach((word) => {
+        text = text.replaceAll('Portfolio', `<span style="color: #9747ff">${word}</span>`);
+      });
+
+      elementCollection[i].innerHTML = text;
+    }
   }
 }

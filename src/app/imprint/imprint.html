@@ -6,7 +6,7 @@
         <div class="devider-left">
             <div></div>
         </div>
-        <h2>Legal Notice</h2>
+        <h2>{{legalText.TITLE}}</h2>
         <div class="devider-right">
             <div></div>
         </div>
@@ -14,84 +14,23 @@
 
     <div class="info-section site-padding">
         <div class="imprint-header">
-            <h3>Imprint</h3>
+            <h3>{{legalText.IMPRINT.TITLE}}</h3>
             <p>
-                Henning Otte<br>
-                Steinberg 51<br>
-                31832 Springe<br>
-                Germany
+                {{legalText.IMPRINT.NAME}}<br>
+                {{legalText.IMPRINT.STREET}}<br>
+                {{legalText.IMPRINT.CITY}}<br>
+                {{legalText.IMPRINT.COUNTRY}}
             </p>
-            <h4>Acceptance of Terms</h4>
+            <h4>{{legalText.ACCEPTTANCE.TITLE}}</h4>
             Email:
             <a href="mailto:HenningOtte91@gmail.com">
-                HenningOtte91@gmail.com
+                {{legalText.ACCEPTTANCE.EMAIL}}
             </a>
         </div>
 
-        <h4>Acceptance of Terms</h4>
-        <p>
-            By accessing and using this <span>portfolio</span> website (“<span>Portfolio</span>”),
-            you acknowledge and agree to the following terms and conditions, as well as any policies or
-            amendments thereto that may be presented from time to time. The operator
-            reserves the right to update or change these terms at any time without prior notice.
-        </p>
-
-        <h4>Scope and Purpose of the Website</h4>
-        <p>
-            <span>Portfolio</span> has been developed as part of a student group project in a web development
-            bootcamp at the
-            <span>Developer Akademie GmbH</span>. It has an educational purpose and is not intended for extensive
-            personal & business
-            usage. As such, we cannot guarantee consistent availability, reliability, accuracy, or any other aspect of
-            quality regarding this Product.
-            <br><br>
-            The design of <span>Portfolio</span> is owned by the <span>Developer Akademie GmbH</span>.
-            Unauthorized use,
-            reproduction,
-            modification, distribution, or replication of the design is strictly prohibited.
-        </p>
-
-        <h4>Ownership and Copyright</h4>
-        <p>
-            The design and content of this <span>Portfolio</span> are the intellectual property of
-            <span>Henning Otte</span>, unless otherwise stated. Unauthorized use,
-            reproduction, modification, or distribution of any content without prior
-            written consent is prohibited.
-        </p>
-
-        <h4>Proprietary Rights</h4>
-        <p>
-            All trademarks, copyrights, and other proprietary information displayed on
-            this website remain the property of their respective owners. Any rights not
-            expressly granted herein are reserved.
-        </p>
-
-        <h4>Use of the Website</h4>
-        <p>
-            This <span>Portfolio</span> may only be used for lawful purposes. Any misuse, including
-            but not limited to illegal activities, harassment, or infringement of rights
-            of third parties, is strictly prohibited. Users are solely responsible for
-            their interactions with the website.
-        </p>
-
-        <h4>Disclaimer of Warranties and Limitation of Liability</h4>
-        <p>
-            This <span>Portfolio</span> is provided <em>“as is”</em> without warranties of any kind,
-            either express or implied, including but not limited to implied warranties
-            of merchantability, fitness for a particular purpose, or non-infringement.
-            In no event shall the operator be liable for any direct or indirect damages
-            arising from the use or inability to use this website.
-        </p>
-
-        <h4>Indemnification</h4>
-        <p>
-            You agree to indemnify and hold harmless <span>Henning Otte</span> from
-            any claims, damages, losses, liabilities, or expenses arising out of your use
-            of this <span>Portfolio</span> or violation of these terms.
-        </p>
-
-        <p class="imprint-date">
-            <span>Date:</span> January 10, 2026
-        </p>
+        @for (item of legalText.MAINTEXT; track $index) {
+        <h4 [innerHTML]="item.TITLE"></h4>
+        <p class="main-text" [innerHTML]="item.TEXT"></p>
+        }
     </div>
 </section>
