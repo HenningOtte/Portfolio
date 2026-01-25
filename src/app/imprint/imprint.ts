@@ -41,7 +41,7 @@ export class Imprint implements OnInit, AfterViewInit {
       let text: string = elementCollection[i].innerHTML;
 
       words.forEach((word) => {
-        text = text.replaceAll('Portfolio', `<span style="color: #9747ff">${word}</span>`);
+        text = text.replaceAll(word, `<span style="color: #9747ff">${word}</span>`);
       });
 
       elementCollection[i].innerHTML = text;
