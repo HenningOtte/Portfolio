@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit, inject } from '@angular/core';
 import { Testimonial } from '../../../models/testimonial.model';
 import { LanguageService } from '../../services/language-service';
+import { AppObserve } from '../../directives/app-observe';
 
 @Component({
   selector: 'app-testimonials',
-  imports: [CommonModule],
+  imports: [CommonModule, AppObserve],
   templateUrl: './testimonials.html',
   styleUrl: './testimonials.scss',
 })

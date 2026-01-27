@@ -31,13 +31,28 @@ textarea {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
+  overflow: hidden;
+}
+
+.title-animation {
+  > .headline {
+    transform: translateX(0);
+  }
+  > .divider {
+    transform: scaleX(1);
+  }
 }
 
 .headline {
   grid-column: 2;
+  transition: all 0.35s ease;
+  transform: translateX(-100vw);
 }
 
 .divider {
+  transition: all 0.35s ease;
+  transform: scaleX(0);
+  transform-origin: center left;
   height: 3px;
   background-color: $bright-purple;
   margin-right: 40px;

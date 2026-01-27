@@ -13,13 +13,14 @@
     <div class="skills-tree">
         @for (item of MySkills.ICONS_LABELS; track $index) {
         @if (item == 'Continually learning') {
-        <div class="skills-item continually-icon" (mouseover)="toggleImg(true)" (mouseout)="toggleImg(false)">
+        <div appAppObserve="animate-scale" class="skills-item continually-icon" (mouseover)="toggleImg(true)"
+            (mouseout)="toggleImg(false)">
             <img [src]="hover == false ? '/images/icons/continually_icon.svg' : '/images/icons/continually_white_icon.svg'"
                 alt="">
             <span>{{item}}</span>
         </div>
         } @else {
-        <div class="skills-item icon-jumping">
+        <div appAppObserve="animate-scale" class="skills-item icon-jumping">
             <img src="/images/icons/{{icons[$index]}}" alt="">
             <span [innerHTML]="item"></span>
         </div>

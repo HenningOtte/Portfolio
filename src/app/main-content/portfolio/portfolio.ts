@@ -4,10 +4,11 @@ import { CommonModule } from '@angular/common';
 import { Card } from '../../../models/card.model';
 import { LanguageService } from '../../services/language-service';
 import { PROJECT_LINKS } from '../../config/projects.config';
+import { AppObserve } from '../../directives/app-observe';
 
 @Component({
   selector: 'app-portfolio',
-  imports: [ProjectCard, CommonModule],
+  imports: [ProjectCard, CommonModule, AppObserve],
   templateUrl: './portfolio.html',
   styleUrl: './portfolio.scss',
 })

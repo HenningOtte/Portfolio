@@ -113,6 +113,9 @@ h2 {
     height: 340px;
     border-radius: 50%;
     border: 3px solid $neon-green;
+    transition: all 0.35s ease;
+    transform: scale(0);
+    transform-origin: center right;
     @media (max-width: 1080px) {
       height: 300px;
     }
@@ -122,6 +125,10 @@ h2 {
     flex-grow: 1;
     background-color: $neon-green;
   }
+}
+
+.profil-img-animate {
+  transform: scale(1) !important;
 }
 
 .bg-shadow-aboutme {

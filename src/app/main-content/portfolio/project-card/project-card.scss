@@ -29,6 +29,8 @@ h3 {
     position: relative;
     top: -60px;
     pointer-events: none;
+    transition: all 0.35s ease;
+    transform: scale(0);
 
     @media (max-width: 420px) {
       width: 280px !important;
@@ -56,6 +58,10 @@ h3 {
   @media (max-width: 930px) {
     align-items: center !important;
   }
+}
+
+.mockup-animate-scale {
+  transform: scale(1) !important;
 }
 
 .tech-stack {

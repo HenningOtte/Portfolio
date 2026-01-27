@@ -1,8 +1,9 @@
 import { Component, Input } from '@angular/core';
+import { AppObserve } from '../../../directives/app-observe';
 
 @Component({
   selector: 'app-project-card',
-  imports: [],
+  imports: [AppObserve],
   templateUrl: './project-card.html',
   styleUrl: './project-card.scss',
 })

@@ -1,6 +1,6 @@
 <section class="project-card" [style]="{'flex-direction' : direction}">
     <div class="mockup">
-        <img src="/images/mockups/{{card.img}}" alt="">
+        <img appAppObserve="mockup-animate-scale" src="/images/mockups/{{card.img}}" alt="">
     </div>
     <div class="project-info"
         [style]="direction == 'row-reverse' ? {'align-items': 'end'} : {'align-items': 'baseline'}">

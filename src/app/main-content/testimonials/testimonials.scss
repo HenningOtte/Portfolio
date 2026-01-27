@@ -121,7 +121,20 @@
   }
 }
 
+.profile-animate {
+  > .avatar {
+    transform: scale(1);
+  }
+
+  .divider {
+    transform: scaleX(1);
+  }
+}
+
 .avatar {
+  transition: all 0.35s ease;
+  transform: scale(0);
+  transform-origin: center right;
   height: 240px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
@@ -146,14 +159,17 @@
   flex-grow: 1;
   background-color: $bright-purple;
   border-radius: 2px;
+  transition: all 0.35s ease;
+  transform: scaleX(0);
+  transform-origin: center right;
 
   @media (max-width: 930px) {
     grid-column: 3;
-    width: calc(100% + 48px);
+    width: calc(100% + 48px) !important;
   }
 
   @media (max-width: 600px) {
-    width: calc(100% + 32px);
+    width: calc(100% + 32px) !important;
   }
 }
 

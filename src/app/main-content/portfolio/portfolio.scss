@@ -16,6 +16,7 @@
 }
 
 .header-headline {
+  overflow: hidden;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -24,9 +25,25 @@
 h2 {
   white-space: nowrap;
   padding: 0 32px;
+  transition: all 0.35s ease;
+  transform: translateY(100px);
 
   @media (max-width: 360px) {
     padding: 0 16px;
+  }
+}
+
+.title-animate {
+  > h2 {
+    transform: translateY(0) !important;
+  }
+
+  > .devider-left {
+    transform: translateX(0);
+  }
+
+  > .devider-right {
+    transform: translateX(0);
   }
 }
 
@@ -34,7 +51,8 @@ h2 {
   display: flex;
   justify-self: end;
   align-items: center;
-
+  transition: all 0.35s ease;
+  transform: translateX(-100vw);
   > div {
     width: 80px;
     height: 4px;
@@ -59,6 +77,8 @@ h2 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  transition: all 0.35s ease;
+  transform: translateX(100vw);
 
   > div {
     height: 4px;
