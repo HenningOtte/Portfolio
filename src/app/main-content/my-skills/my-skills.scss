@@ -87,6 +87,17 @@
   text-align: end;
   line-height: 1.1;
   margin-bottom: 8px;
+  transition: all 0.35s ease;
+  transform: translateX(100vw);
+}
+
+.translateRight {
+  > h2 {
+    transform: translateX(0);
+  }
+  > div {
+    transform: translateX(0);
+  }
 }
 
 .skills-description {
@@ -123,6 +134,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  overflow: hidden;
+  width: 100%;
   > h2 {
     margin-right: 16px;
   }
@@ -140,6 +153,8 @@ text {
   width: 64px;
   height: 3px;
   background-color: $bright-purple;
+  transform: translateX(100vw);
+  transition: all 0.35s ease;
 
   @media (max-width: 1080px) {
     width: 48px;

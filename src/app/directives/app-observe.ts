@@ -1,10 +1,12 @@
-import { Directive, ElementRef, AfterViewInit } from '@angular/core';
+import { Directive, ElementRef, AfterViewInit, Input } from '@angular/core';
 
 @Directive({
   selector: '[appAppObserve]',
 })
 export class AppObserve implements AfterViewInit {
   private observer!: IntersectionObserver;
+
+  @Input('appAppObserve') newClass: string = '';
 
   constructor(private el: ElementRef) {}
 
@@ -13,18 +15,18 @@ export class AppObserve implements AfterViewInit {
       root: null,
       rootMargin: '0px',
       scrollMargin: '0px',
-      threshold: 1.0,
+      threshold: 1,
     };
 
-    const observer = new IntersectionObserver((entries, observer) => {
+    this.observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          this.el.nativeElement.style.background = 'yellow';
+          this.el.nativeElement.classList.add(this.newClass);
           this.observer.disconnect();
         }
       });
     }, options);
 
-    observer.observe(this.el.nativeElement);
+    this.observer.observe(this.el.nativeElement);
   }
 }

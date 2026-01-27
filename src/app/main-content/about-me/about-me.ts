@@ -1,10 +1,11 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LanguageService } from '../../services/language-service';
+import { AppObserve } from '../../directives/app-observe';
 
 @Component({
   selector: 'app-about-me',
-  imports: [CommonModule],
+  imports: [CommonModule, AppObserve],
   templateUrl: './about-me.html',
   styleUrl: './about-me.scss',
 })

@@ -13,15 +13,28 @@
   background-position: right -200px top;
 }
 
+.title {
+  width: 100%;
+}
+
+.h2-transition {
+  > h2 {
+    transform: translateX(0);
+  }
+}
+
 h2 {
   line-height: 1;
   margin-bottom: 40px;
+  transition: all 0.35s ease;
+  transform: translateX(-100vw);
 }
 
 .about-content {
   width: 50%;
   padding-left: 60px;
   padding-bottom: 60px;
+  overflow: hidden;
 
   @media (max-width: 1080px) {
     width: 55%;
@@ -116,4 +129,8 @@ h2 {
   height: 400px;
   width: 400px;
   right: -100px;
+}
+
+.opacity1 {
+  opacity: 1;
 }
