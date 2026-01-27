@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, inject, signal } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { LanguageService } from '../../services/language-service';
 import { HttpClient } from '@angular/common/http';
@@ -19,6 +19,7 @@ export class Contact implements OnInit {
   http = inject(HttpClient);
 
   mailTest = true;
+  isMessageVisible = signal(false);
 
   contactData: { name: string; email: string; message: string; privacyAccepted: boolean } = {
     name: '',
@@ -36,8 +37,6 @@ export class Contact implements OnInit {
         lang == 'en' ? this.languageService.en.CONTACT : this.languageService.de.CONTACT;
     });
   }
-
-  validContactform() {}
 
   trimWhitespace(e: any) {
     const keys: ['name', 'message', 'email'] = ['name', 'message', 'email'];
@@ -76,8 +75,16 @@ export class Contact implements OnInit {
         error: (error) => {
           console.error(error);
         },
-        complete: () => console.info('send post complete'),
+        complete: () => this.showSuccessMessage(),
       });
     }
+  }
+
+  showSuccessMessage() {
+    this.isMessageVisible.set(true);
+
+    setTimeout(() => {
+      this.isMessageVisible.set(false);
+    }, 2000);
   }
 }

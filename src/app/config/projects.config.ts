@@ -11,8 +11,4 @@ export const PROJECT_LINKS = [
     live: 'https://henningotte.github.io/Pokedex/',
     github: 'https://github.com/HenningOtte/Pokedex',
   },
-  {
-    live: 'https://henningotte.github.io/ringoffire/',
-    github: 'https://github.com/HenningOtte/ringoffire',
-  },
 ];

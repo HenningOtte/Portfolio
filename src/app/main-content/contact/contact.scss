@@ -240,3 +240,16 @@ input:-webkit-autofill {
     transform: translateY(400px) translateX(-400px);
   }
 }
+
+.message-success {
+  background-color: rgba(20, 29, 47, 0.5);
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  pointer-events: none;
+}

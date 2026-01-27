@@ -65,16 +65,6 @@
           "HTML"
         ],
         "DESCRIPTION": "Basierend auf der PokéAPI: Eine einfache Bibliothek zum Abrufen und Katalogisieren von Pokémon-Informationen."
-      },
-      {
-        "TITLE": "Ring of Fire",
-        "TECHSTACK": [
-          "JavaScript",
-          "CSS",
-          "HTML",
-          "Firebase"
-        ],
-        "DESCRIPTION": "Ein Angular-basiertes Multiplayer-Spiel, das Firebase für Echtzeit-Datensynchronisation und das Management von Spielerzuständen nutzt."
       }
     ]
   },

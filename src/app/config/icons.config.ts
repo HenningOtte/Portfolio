@@ -31,7 +31,6 @@ export const ICONS = {
     'join_laptop_mockup.png',
     '1bit_horror_game_laptop_mockup.png',
     'pokemon_api_laptop_mockup.png',
-    'ring-of-fire_laptop_mockup.png',
   ],
   TESTIMONIALS: ['michael_profil_img.png', 'Eichinger_profil_img.png', 'nuber_profil_img.png'],
 };

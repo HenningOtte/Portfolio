@@ -32,7 +32,7 @@
                         [(ngModel)]="contactData.email" type="text" id="email" name="lastname"
                         placeholder={{contact.INPUTS[1]}}
                         [ngClass]="{'is-uninvalid' : userMail.invalid && userMail.touched, 'is-invalid' : userMail.valid && userMail.touched}"
-                        pattern="[\-a-zA-Z0-9~!$%^&amp;*_=+\}\{'?]+(\.[\-a-zA-Z0-9~!$%^&amp;*_=+\}\{'?]+)*@[a-zA-Z0-9_][\-a-zA-Z0-9_]*(\.[\-a-zA-Z0-9_]+)*\.[cC][oO][mM](:[0-9]{1,5})?"
+                        pattern="[\-a-zA-Z0-9~!$%^&amp;*_=+\}\{'?]+(\.[\-a-zA-Z0-9~!$%^&amp;*_=+\}\{'?]+)*@[a-zA-Z0-9_][\-a-zA-Z0-9_]*(\.[\-a-zA-Z0-9_]+)*\.[a-zA-Z]{2,}"
                         maxlength="40" required>
                     <div class="privacy-warning">
                         @if (!userMail.valid && userMail.touched) {<span>Please enter a email!</span>}
@@ -83,5 +83,12 @@
             </form>
         </div>
     </div>
+
     <div class="arrow-up"><a href="#hero"></a></div>
+
+    @if (isMessageVisible()) {
+    <div class="message-success">
+        Success! Message sent.
+    </div>
+    }
 </section>
