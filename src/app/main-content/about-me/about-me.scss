@@ -2,12 +2,16 @@
 
 .about {
   position: relative;
+}
+
+.about-content {
+  position: relative;
   z-index: 10;
   width: 100%;
   height: auto;
   display: flex;
   gap: 80px;
-  background-image: url('/images/shadows/purple_shadow_aboutme.svg');
+  margin-inline: auto;
   background-size: 500px;
   background-repeat: no-repeat;
   background-position: right -200px top;
@@ -30,7 +34,7 @@ h2 {
   transform: translateX(-100vw);
 }
 
-.about-content {
+.about-text {
   width: 50%;
   padding-left: 60px;
   padding-bottom: 60px;
@@ -131,13 +135,31 @@ h2 {
   transform: scale(1) !important;
 }
 
-.bg-shadow-aboutme {
-  position: absolute;
-  height: 400px;
-  width: 400px;
-  right: -100px;
-}
-
 .opacity1 {
   opacity: 1;
+}
+
+.purple-shadow {
+  transform: translateY(-200px);
+  position: absolute;
+  height: 800px;
+  z-index: 100;
+  overflow: hidden;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+
+  > img {
+    position: absolute;
+    right: 0;
+    transform: translateX(40%);
+
+    @media (min-width: 1920px) {
+      transform: translateX(0);
+    }
+
+    @media (max-width: 740px) {
+      transform: translateX(60%);
+    }
+  }
 }

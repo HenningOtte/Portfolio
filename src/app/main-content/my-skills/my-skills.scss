@@ -2,11 +2,13 @@
 @use '../../styles/buttons' as *;
 
 .my-skills {
+  width: 100%;
+  margin-inline: auto;
   position: relative;
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  margin: 160px 0px;
+  padding: 160px 0px;
   @media (max-width: 930px) {
     flex-direction: column-reverse;
   }

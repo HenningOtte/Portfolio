@@ -1,28 +1,36 @@
-<section class="portfolio scroll-margin max-width" id="portfolio">
-    <div class="header max-width">
-        <div appAppObserve="title-animate" class="header-headline">
-            <div class="devider-left">
-                <div></div>
+<section class="portfolio">
+    <div class="portfolio-content scroll-margin max-width" id="portfolio">
+        <div class="header max-width">
+            <div appAppObserve="title-animate" class="header-headline">
+                <div class="devider-left">
+                    <div></div>
+                </div>
+                <h2>Portfolio</h2>
+                <div class="devider-right">
+                    <div></div>
+                </div>
             </div>
-            <h2>Portfolio</h2>
-            <div class="devider-right">
-                <div></div>
-            </div>
+            <p class="subline">{{portfolio.INTRO}}</p>
         </div>
-        <p class="subline">{{portfolio.INTRO}}</p>
-    </div>
-    <div class="projects site-padding">
-        @for (item of projects; track $index; let odd = $odd) {
-        <app-project-card [direction]="flexDirection(odd)" [card]="item"></app-project-card>
-        }
+        <div class="projects site-padding">
+            @for (item of projects; track $index; let odd = $odd) {
+            <app-project-card [direction]="flexDirection(odd)" [card]="item"></app-project-card>
+            }
+        </div>
     </div>
 
-    <div class="shadow-green-top">
+    <div class="shadows">
+        <img class="shadow-green-top" src="/images/shadows/green_shadow_skills_portfolio_shadow.svg" alt="green shadow">
+        <img class="shadow-purple-center" src="/images/shadows/purple_shadow_portfolio.svg" alt="purple shadow">
+        <img class="shadow-green-bottom" src="/images/shadows/green_shadow_portfolio.svg" alt="grenn shadow">
+    </div>
+
+    <!-- <div class="shadow-green-top">
         <img src="/images/shadows/green_shadow_skills_portfolio_shadow.svg" alt="green shadow">
     </div>
 
     <div class="shadow-green-bottom">
-        <img src="/images/shadows/green_shadow_portfolio.svg" alt="purple shadow">
-    </div>
+        
+    </div> -->
 
 </section>

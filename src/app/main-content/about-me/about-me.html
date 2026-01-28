@@ -1,26 +1,32 @@
-<section class="about scroll-margin max-width" id="about">
-    <div class="about-content">
-        <div appAppObserve="h2-transition" class="title">
-            <h2 class="about-title">{{aboutMe.TITLE}}</h2>
+<section class="about">
+    <div class="about-content scroll-margin max-width" id="about">
+        <div class="about-text">
+            <div appAppObserve="h2-transition" class="title">
+                <h2 class="about-title">{{aboutMe.TITLE}}</h2>
+            </div>
+
+            <p class="about-description">{{aboutMe.SUBTITLE}}</p>
+
+            <div class="about-mindset">
+                @for (points of aboutMe.POINTS; track $index) {
+                <div class="about-mindset-item">
+                    <div class="about-icon-wrapper">
+                        <img src="/images/icons/{{icons[$index]}}" alt="">
+                    </div>
+                    <span class="about-mindset-text">{{points}}</span>
+                </div>
+                }
+            </div>
         </div>
 
-        <p class="about-description">{{aboutMe.SUBTITLE}}</p>
-
-        <div class="about-mindset">
-            @for (points of aboutMe.POINTS; track $index) {
-            <div class="about-mindset-item">
-                <div class="about-icon-wrapper">
-                    <img src="/images/icons/{{icons[$index]}}" alt="">
-                </div>
-                <span class="about-mindset-text">{{points}}</span>
-            </div>
-            }
+        <div class="about-image">
+            <img appAppObserve="profil-img-animate" src="/images/about_me_profile_pic.png" alt="">
+            <div></div>
         </div>
     </div>
 
-    <div class="about-image">
-        <img appAppObserve="profil-img-animate" src="/images/about_me_profile_pic.png" alt="">
-        <div></div>
+    <div class="purple-shadow">
+        <img src="/images/shadows/purple_shadow_aboutme.svg" alt="purple shadow">
     </div>
 
 </section>

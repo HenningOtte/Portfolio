@@ -1,9 +1,17 @@
 @use './styles/variables' as *;
 
+main {
+  background-size: 100%;
+  width: 100%;
+}
+
+.shadow {
+  height: 800px;
+}
+
 .layout-container {
   width: 100%;
   margin-inline: auto;
-  background-color: $bg-darkblue;
 }
 
 @media (min-width: 1680px) {

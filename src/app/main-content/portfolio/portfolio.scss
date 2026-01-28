@@ -1,8 +1,13 @@
 @use '../../styles/variables' as *;
 
 .portfolio {
+  position: relative;
+}
+
+.portfolio-content {
   margin-bottom: 80px;
   position: relative;
+  margin-inline: auto;
 }
 
 .header {
@@ -122,39 +127,61 @@ h2 {
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  background-image: url('/images/shadows/purple_shadow_portfolio.svg');
-  background-repeat: no-repeat;
-  background-position: left -500px center;
-  background-size: 1000px;
+  // background-image: url('/images/shadows/purple_shadow_portfolio.svg');
+  // background-repeat: no-repeat;
+  // background-position: left -500px center;
+  // background-size: 1000px;
 
   @media (max-width: 930px) {
     gap: 40px;
   }
 }
 
-.shadow-green-top {
-  top: -400px !important;
+.shadows {
   position: absolute;
-  overflow: hidden;
-  height: auto;
-  width: 100%;
+  inset: 0;
+  top: -400px;
+  height: calc(100% + 1000px);
   pointer-events: none;
-  > img {
-    transform: translateX(-600px);
+  overflow: hidden;
+}
+
+.shadow-green-top {
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translateX(-40%);
+  pointer-events: none;
+
+  @media (min-width: 2176px) {
+    transform: translateX(0%);
+  }
+
+  @media (max-width: 840px) {
+    transform: translateX(-60%);
+  }
+}
+
+.shadow-purple-center {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(-50%) translateX(-40%);
+  pointer-events: none;
+
+  @media (max-width: 840px) {
+    transform: translateY(-50%) translateX(-60%);
   }
 }
 
 .shadow-green-bottom {
-  display: flex;
-  flex-direction: row-reverse;
-  bottom: -600px;
+  bottom: 0;
+  right: 0;
   position: absolute;
-  overflow: hidden;
-  height: auto;
-  width: 100%;
+  transform: translateX(40%) rotate(90deg);
   pointer-events: none;
-  > img {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1) translateX(-600px);
+
+  @media (max-width: 840px) {
+    transform: translateX(60%) rotate(90deg);
   }
 }

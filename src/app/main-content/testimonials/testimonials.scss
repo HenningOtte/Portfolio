@@ -1,13 +1,14 @@
 @use '../../styles/variables' as *;
 
 .testimonials {
+  margin-inline: auto;
   width: 100%;
   padding-left: 80px;
   display: flex;
   flex-direction: column;
   gap: 48px;
   font-size: 16px;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 
   @media (max-width: 1080px) {
     padding-left: 0px !important;
