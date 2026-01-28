@@ -48,6 +48,8 @@
 }
 
 body {
+  min-height: 100vh;
+  height: 100dvh;
   background-color: $bg-darkblue;
   color: white;
   @media (min-width: 1440px) {
