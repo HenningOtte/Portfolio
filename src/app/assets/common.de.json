@@ -1,4 +1,10 @@
 {
+  "NAV": [
+    "Über mich",
+    "Fähigkeiten",
+    "Portfolio",
+    "Kontakt"
+  ],
   "HERO": {
     "BUTTON": "Lass uns reden!",
     "SCROLLDOWN": "Weiter scrollen"
@@ -13,7 +19,7 @@
     ]
   },
   "MY_SKILLS": {
-    "HEADLINE": "Meine Fähigkeiten",
+    "HEADLINE": "Fähigkeiten",
     "INTRO": "Überblick über Frontend-Technologien, mit denen ich gearbeitet habe.",
     "CTA": "Kontakt aufnehmen",
     "LOOKING_FOR": [
@@ -105,12 +111,6 @@
     ],
     "BTN": "Nachricht senden :)"
   },
-  "NAV": [
-    "Über mich",
-    "Meine Fähigkeiten",
-    "Portfolio",
-    "Kontakt"
-  ],
   "PRIVACYPOLICY": {
     "TITLE": "Datenschutzerklärung",
     "CONTROLLER": {

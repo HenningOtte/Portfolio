@@ -8,17 +8,17 @@
     </button>
 
     <div [ngClass]="{'push-in-nav' : isMenuOpen}" class="nav-links">
-        <a href="#about" (click)="toggleMenu()">About me</a>
-        <a href="#skills" (click)="toggleMenu()">My skills</a>
-        <a href="#portfolio" (click)="toggleMenu()">Portfolio</a>
-        <a href="#contact" (click)="toggleMenu()">Contact</a>
+        <a routerLink="/" (click)="toggleMenu() ; scrollService.changeTarget('about')">{{navbarLinks[0]}}</a>
+        <a routerLink="/" (click)="toggleMenu() ; scrollService.changeTarget('skills')">{{navbarLinks[1]}}</a>
+        <a routerLink="/" (click)="toggleMenu() ; scrollService.changeTarget('portfolio')">{{navbarLinks[2]}}</a>
+        <a routerLink="/" (click)="toggleMenu() ; scrollService.changeTarget('contact')">{{navbarLinks[3]}}</a>
         <div class="languages">
-            <button class="btn-en" [ngStyle]="{color: LanguageService.lang.value === 'en' ? '#70E61C' : 'white'}"
-                (click)="LanguageService.switchLang('en'); toggleMenu()">
+            <button class="btn-en" [ngStyle]="{color: languageService.lang.value === 'en' ? '#70E61C' : 'white'}"
+                (click)="languageService.switchLang('en'); toggleMenu()">
                 EN
             </button>/
-            <button class="btn-de" (click)="LanguageService.switchLang('de'); toggleMenu()"
-                [ngStyle]="{color: LanguageService.lang.value === 'de' ? '#70E61C' : 'white'}">
+            <button class="btn-de" (click)="languageService.switchLang('de'); toggleMenu()"
+                [ngStyle]="{color: languageService.lang.value === 'de' ? '#70E61C' : 'white'}">
                 DE
             </button>
         </div>

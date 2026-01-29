@@ -1,20 +1,22 @@
 <nav class="navbar">
   <div class="navbar-container max-width site-padding">
-    <img class="navbar-logo" src="/images/icons/Henning_Logo.svg" alt="">
+    <a routerLink="/" (click)="scrollService.changeTarget('hero')">
+      <img class="navbar-logo" src="/images/icons/Henning_Logo.svg" alt="">
+    </a>
     <div class="navbar-actions">
       <div class="navbar-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
+        <a routerLink="/" (click)="scrollService.changeTarget('about')">{{navbarLinks[0]}}</a>
+        <a routerLink="/" (click)="scrollService.changeTarget('skills')">{{navbarLinks[1]}}</a>
+        <a routerLink="/" (click)="scrollService.changeTarget('portfolio')">{{navbarLinks[2]}}</a>
       </div>
 
       <div class="navbar-languages">
-        <button [ngClass]="{'lang-btn-on': LanguageService.lang.value == 'de', 
-          'lang-btn-off': LanguageService.lang.value == 'en'}" (click)="LanguageService.switchLang('de')">
+        <button [ngClass]="{'lang-btn-on': languageService.lang.value == 'de', 
+          'lang-btn-off': languageService.lang.value == 'en'}" (click)="languageService.switchLang('de')">
           DE
         </button>
-        <button (click)="LanguageService.switchLang('en')" [ngClass]="{'lang-btn-on': LanguageService.lang.value == 'en',
-          'lang-btn-off': LanguageService.lang.value == 'de'}">
+        <button (click)="languageService.switchLang('en')" [ngClass]="{'lang-btn-on': languageService.lang.value == 'en',
+          'lang-btn-off': languageService.lang.value == 'de'}">
           EN</button>
       </div>
     </div>

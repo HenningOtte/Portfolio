@@ -1,4 +1,10 @@
 {
+  "NAV": [
+    "About me",
+    "My skills",
+    "Portfolio",
+    "Contact"
+  ],
   "HERO": {
     "BUTTON": "Let's talk!",
     "SCROLLDOWN": "Scroll down"
@@ -105,12 +111,6 @@
     ],
     "BTN": "Send a message :)"
   },
-  "NAV": [
-    "About me",
-    "My skills",
-    "Portfolio",
-    "Contact"
-  ],
   "PRIVACYPOLICY": {
     "TITLE": "Privacy Policy",
     "CONTROLLER": {

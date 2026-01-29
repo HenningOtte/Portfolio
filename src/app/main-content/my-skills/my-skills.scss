@@ -2,6 +2,7 @@
 @use '../../styles/buttons' as *;
 
 .my-skills {
+  scroll-margin-top: -50px;
   width: 100%;
   margin-inline: auto;
   position: relative;
@@ -9,8 +10,12 @@
   display: flex;
   justify-content: space-between;
   padding: 160px 0px;
+
   @media (max-width: 930px) {
     flex-direction: column-reverse;
+  }
+  @media (min-width: 1920px) {
+    scroll-margin-top: 0px;
   }
 }
 

@@ -1,14 +1,14 @@
 export const PROJECT_LINKS = [
   {
-    live: 'https://henningotte.github.io/6-join/',
-    github: 'https://join-henning.de/',
+    github: 'https://github.com/HenningOtte/6-join',
+    live: 'https://join-henning.de/',
   },
   {
-    live: 'https://henningotte.github.io/1bit-horror-game/',
-    github: 'https://1bithorror.de/',
+    github: 'https://github.com/HenningOtte/1bit-horror-game',
+    live: 'https://1bithorror.de/',
   },
   {
-    live: 'https://henningotte.github.io/Pokedex/',
-    github: 'https://dex-henning.de/',
+    github: 'https://github.com/HenningOtte/Pokedex',
+    live: 'https://dex-henning.de/',
   },
 ];

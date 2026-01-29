@@ -1,6 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { LanguageService } from '../services/language-service';
+import { ScrollService } from '../services/scroll-service';
 
 @Component({
   selector: 'app-privacy-policy',
@@ -10,6 +11,7 @@ import { LanguageService } from '../services/language-service';
 })
 export class PrivacyPolicy implements OnInit {
   languageService = inject(LanguageService);
+  scrollService = inject(ScrollService);
   privacyText: any;
 
   ngOnInit(): void {

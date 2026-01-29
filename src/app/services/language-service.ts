@@ -35,8 +35,4 @@ export class LanguageService implements OnInit {
     let myLocal = JSON.parse(local);
     this.switchLang(myLocal.language);
   }
-
-  checkLanguage() {
-    // return lang == 'en' ? true : false;
-  }
 }

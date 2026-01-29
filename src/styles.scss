@@ -118,6 +118,10 @@ h3 {
   @media (max-width: 360px) {
     padding: 0 24px;
   }
+
+  @media (min-width: 1920px) {
+    padding: 0;
+  }
 }
 
 .dNone {

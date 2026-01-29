@@ -318,8 +318,6 @@
 }
 
 .hero-curve {
-  // mix-blend-mode: lighten;
-  max-width: 1680px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -331,6 +329,10 @@
   overflow-y: visible;
   bottom: -680px;
 
+  > .curve-img-ultrawide {
+    display: none;
+  }
+
   @media (max-width: 1280px) and (orientation: portrait) {
     bottom: -400px;
   }
@@ -339,8 +341,24 @@
     bottom: -490px;
   }
 
+  @media (max-width: 600px) and (orientation: portrait) {
+    bottom: -510px;
+  }
+
   @media (max-width: 420px) and (orientation: portrait) {
-    bottom: -520px;
+    bottom: -550px;
+  }
+
+  @media (min-width: 1680px) {
+    > .curve-img {
+      display: none;
+    }
+
+    > .curve-img-ultrawide {
+      display: block;
+      width: 100%;
+      max-height: 1300px;
+    }
   }
 }
 

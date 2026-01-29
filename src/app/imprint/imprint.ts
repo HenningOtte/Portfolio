@@ -1,6 +1,7 @@
 import { Component, OnInit, inject, AfterViewInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { LanguageService } from '../services/language-service';
+import { ScrollService } from '../services/scroll-service';
 
 @Component({
   selector: 'app-imprint',
@@ -10,6 +11,7 @@ import { LanguageService } from '../services/language-service';
 })
 export class Imprint implements OnInit, AfterViewInit {
   languageService = inject(LanguageService);
+  scrollService = inject(ScrollService);
   legalText: any;
 
   ngOnInit(): void {
