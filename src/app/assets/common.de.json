@@ -11,11 +11,11 @@
   },
   "ABOUT_ME": {
     "TITLE": "Über mich",
-    "SUBTITLE": "Schreibe einige Informationen über dich, die mit IT zu tun haben. Warum begeistert dich das Programmieren? Was inspiriert dich, deine Programmierfähigkeiten stetig zu verbessern?",
+    "SUBTITLE": "Ich bin Web Developer mit Schwerpunkt im Frontend und dem klaren Ziel, mein Wissen künftig auch im Backend weiter auszubauen. Besonders begeistert mich das Lösen komplexer Probleme und der kreative Umgang mit Herausforderungen. Das Gefühl, nach einem hartnäckigen Bug endlich eine saubere Lösung zu finden, ist für mich eine der größten Motivationen beim Programmieren.",
     "POINTS": [
-      "Wo bist du ansässig? Bist du offen für verschiedene Arbeitsmodelle, wie zum Beispiel Remote-Arbeit oder sogar einen Standortwechsel?",
-      "Zeige, dass du aufgeschlossen bist. Begeistert es dich, neue Technologien zu erlernen und deine Fähigkeiten kontinuierlich weiterzuentwickeln?",
-      "Eine kurze Beschreibung deiner Herangehensweise an Problemlösungen. Lernst du aus jeder Herausforderung, während du nach der effizientesten oder elegantesten Lösung suchst?"
+      "Ich lebe in Barsinghausen (Niedersachsen) und bin flexibel in der Arbeitsweise. Remote- und Vor-Ort-Arbeit sind für mich ebenso möglich, bevorzugt arbeite ich jedoch hybrid, da mir der persönliche Austausch im Team wichtig ist.",
+      "Ich bin offen für neue Frameworks, moderne Technologien und neue Bereiche der Softwareentwicklung. Kontinuierliches Lernen gehört für mich selbstverständlich zum Entwickleralltag.",
+      "Bei Fehlern analysiere ich den Code Schritt für Schritt, nutze Entwicklertools, überprüfe Übergaben und vereinfache Abläufe gezielt. Mein Ziel ist es, den Programmfluss vollständig zu verstehen und daraus nachhaltige Lösungen zu entwickeln."
     ]
   },
   "MY_SKILLS": {
@@ -92,7 +92,7 @@
     "TITLE": "Kontakt",
     "SUBTITLE": "Ein Problem zu lösen?",
     "DESCRIPTION": [
-      "Ermutige Menschen, dich zu kontaktieren, und beschreibe, für welche Rolle du dich interessierst. Zeige, welchen Mehrwert du durch deine Arbeit in ihre Projekte einbringst.",
+      "Ich lege großen Wert auf saubere, verständliche Lösungen und gut strukturierten Code. Durch meinen Hintergrund im Mediendesign achte ich nicht nur auf Funktionalität, sondern auch auf ein klares Layout und ansprechendes Design. In der Softwareentwicklung habe ich meine Leidenschaft gefunden – sie motiviert mich täglich, mich weiterzuentwickeln und echten Mehrwert in Projekte einzubringen.",
       "Du brauchst einen Frontend-Entwickler?",
       "Kontaktiere mich!"
     ],

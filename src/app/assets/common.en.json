@@ -11,11 +11,11 @@
   },
   "ABOUT_ME": {
     "TITLE": "About me",
-    "SUBTITLE": "Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills?",
+    "SUBTITLE": "I am a Web Developer with a strong focus on frontend development and a clear goal of expanding my skills into backend development in the future. I am especially passionate about solving complex problems and approaching challenges creatively. The feeling of finally finding a clean solution after struggling with a stubborn bug is one of my biggest motivations in programming.",
     "POINTS": [
-      "Where are you located? Are you open to different ways of working, such as working remotely or even relocating?",
-      "Show that you are open-minded. Are you enthusiastic about learning new technologies and continually improving your skills?",
-      "A brief description of your problem-solving approach. Do you learn from each challenge as you search for the most efficient or elegant solution?"
+      "I live in Barsinghausen, Germany, and I am flexible in terms of working arrangements. Both remote and on-site work are possible for me, although I prefer a hybrid setup, as personal exchange within a team is important to me.",
+      "I am open to new frameworks, modern technologies, and exploring new areas of software development. Continuous learning is a natural part of my daily work as a developer.",
+      "When facing issues, I analyze the code step by step, make use of developer tools, check parameters, and simplify processes where necessary. My goal is to fully understand the program flow and develop sustainable, well-structured solutions."
     ]
   },
   "MY_SKILLS": {
@@ -92,7 +92,7 @@
     "TITLE": "Contact",
     "SUBTITLE": "Got a problem to solve?",
     "DESCRIPTION": [
-      "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
+      "I place great value on clean, understandable solutions and well-structured code. Thanks to my background in media design, I focus not only on functionality but also on clear layouts and appealing design. In software development, I have found my passion — it motivates me every day to grow, improve my skills, and add real value to projects.",
       "Need a Frontend developer?",
       "Contact me!"
     ],
