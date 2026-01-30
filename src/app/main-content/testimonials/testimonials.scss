@@ -41,6 +41,9 @@
   width: 72px;
   top: -24px;
   left: -36px;
+  @media (max-width: 600px) {
+    left: -18px;
+  }
 }
 
 .content {
@@ -62,18 +65,13 @@
   }
 
   @media (max-width: 600px) {
-    padding: 24px;
-    min-height: 360px;
+    padding: 32px 24px;
+    min-height: 408px;
   }
 
   @media (max-width: 420px) {
-    padding: 24px;
-    min-height: 460px;
-  }
-
-  @media (max-width: 350px) {
-    padding: 16px;
-    min-height: 500px;
+    padding: 32px 24px;
+    min-height: 408px;
   }
 }
 

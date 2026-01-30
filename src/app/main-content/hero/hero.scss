@@ -348,18 +348,6 @@
   @media (max-width: 420px) and (orientation: portrait) {
     bottom: -550px;
   }
-
-  @media (min-width: 1680px) {
-    > .curve-img {
-      display: none;
-    }
-
-    > .curve-img-ultrawide {
-      display: block;
-      width: 100%;
-      max-height: 1300px;
-    }
-  }
 }
 
 .curve-img {
@@ -367,4 +355,11 @@
   height: auto;
   display: block;
   object-position: right bottom;
+
+  @media (min-width: 1680px) {
+    // min-width: auto;
+    display: block;
+    width: 100%;
+    max-height: 1300px;
+  }
 }
