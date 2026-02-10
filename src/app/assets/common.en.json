@@ -11,7 +11,7 @@
   },
   "ABOUT_ME": {
     "TITLE": "About me",
-    "SUBTITLE": "I am a Web Developer with a strong focus on frontend development and a clear goal of expanding my skills into backend development in the future. I am especially passionate about solving complex problems and approaching challenges creatively. The feeling of finally finding a clean solution after struggling with a stubborn bug is one of my biggest motivations in programming.",
+    "SUBTITLE": "I am a Web Developer with a strong focus on frontend development and a clear goal of expanding my skills into backend development in the future. Before transitioning fully into web development, I gained several years of experience as a media designer, a role that strongly demanded both creativity and logical thinking. I am especially passionate about solving complex problems and approaching challenges creatively. The feeling of finally finding a clean solution after struggling with a stubborn bug is one of my biggest motivations in programming.",
     "POINTS": [
       "I live in Barsinghausen, Germany, and I am flexible in terms of working arrangements. Both remote and on-site work are possible for me, although I prefer a hybrid setup, as personal exchange within a team is important to me.",
       "I am open to new frameworks, modern technologies, and exploring new areas of software development. Continuous learning is a natural part of my daily work as a developer.",
@@ -38,7 +38,7 @@
       "REST-API",
       "Scrum",
       "Material Design",
-      "Continually learning"
+      "Continuous learning"
     ]
   },
   "PORTFOLIO": {
@@ -85,7 +85,7 @@
     },
     {
       "NAME": "I.Nuber - Frontend Engineer",
-      "QUOTE": "It was a great pleasure to work with Michael. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well."
+      "QUOTE": "It was a great pleasure to work with Henning. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well."
     }
   ],
   "CONTACT": {
